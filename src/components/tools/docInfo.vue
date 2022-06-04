@@ -102,7 +102,7 @@ export default {
     setHref(){
       const latestDoc = this.$docs.latestDoc
 
-      this.href = `https://github.com/onkz481/solo-ui-document/src/documents/blob/main/${this.$docs.locale}/${latestDoc.category}/${latestDoc.name}.md`
+      this.href = `https://github.com/onkz481/solo-ui-document/blob/main/src/documents/${this.$docs.locale}/${latestDoc.category}/${latestDoc.name}.md`
     }
   }
 }
