@@ -1,0 +1,22 @@
+// src/main.js
+
+import Vue from 'vue'
+import SoloUi from 'solo-ui'
+
+Vue.use(SoloUi)
+
+import en from 'src/locales/en'
+
+new Vue({
+  ...
+  soloui: new SoloUi({
+    ...
+    lang: {
+      ...
+      locales: {
+        en: en
+      }
+    }
+  }),
+  ...
+})

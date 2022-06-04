@@ -1,0 +1,26 @@
+<template>
+  <su-container>
+    <su-row>
+      <su-col
+        v-for="elevation in elevations"
+        :key="elevation"
+      >
+        <su-sheet
+          class="mx-auto"
+          width="100"
+          height="100"
+          :elevation="elevation"
+          color="#ffffff"
+        />
+      </su-col>
+    </su-row>
+  </su-container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    elevations: [0, 12, 24]
+  })
+}
+</script>

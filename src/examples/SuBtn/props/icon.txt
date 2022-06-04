@@ -1,0 +1,33 @@
+<template>
+  <su-row
+    justify="space-around"
+  >
+    <su-btn
+      icon
+    >
+      <su-icon>
+        mdi-home
+      </su-icon>
+    </su-btn>
+
+    <su-btn
+      color="primary"
+      icon
+      text
+    >
+      <su-icon>
+        mdi-home
+      </su-icon>
+    </su-btn>
+
+    <su-btn
+      color="indigo"
+      icon
+      outlined
+    >
+      <su-icon>
+        mdi-home
+      </su-icon>
+    </su-btn>
+  </su-row>
+</template>

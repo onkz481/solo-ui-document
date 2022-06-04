@@ -1,0 +1,13 @@
+<template>
+  <div
+    class="d-flex"
+  >
+    <su-text-field
+      label="label"
+      prepend-icon="mdi-message"
+      prepend-inner-icon="mdi-emoticon-outline"
+      append-icon="mdi-send"
+      append-inner-icon="mdi-close"
+    />
+  </div>
+</template>

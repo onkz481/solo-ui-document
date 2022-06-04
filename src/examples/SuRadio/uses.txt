@@ -1,0 +1,26 @@
+<template>
+  <div
+    class="flex-box"
+  >
+    <p>{{ radios }}</p>
+        
+    <su-radio-group
+      v-model="radios"
+    >
+      <su-radio
+        v-for="n in 3"
+        :key="n"
+        :label="`Radio ${n}`"
+        :value="`Radio ${n}`"
+      />
+    </su-radio-group>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    radios: 'Radio 1'
+  })
+}
+</script>

@@ -1,0 +1,43 @@
+<template>
+  <su-card
+    width="400"
+    class="mx-auto"
+  >
+    <su-container>
+      <su-row
+        no-gutters
+      >
+        <su-col
+          cols="auto"
+          align-self="center"
+        >
+          <su-btn
+            icon
+          >
+            <su-avatar>
+              <span class="text-h6">
+                JD
+              </span>
+            </su-avatar>
+          </su-btn>
+        </su-col>
+
+        <su-col>
+          <su-list-item
+            two-line
+          >
+            <su-list-item-content>
+              <su-list-item-title>
+                John Doe
+              </su-list-item-title>
+
+              <su-list-item-subtitle>
+                john.doe@doe.com
+              </su-list-item-subtitle>
+            </su-list-item-content>
+          </su-list-item>
+        </su-col>
+      </su-row>
+    </su-container>
+  </su-card>
+</template>

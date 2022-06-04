@@ -1,0 +1,23 @@
+<template>
+  <div>
+    <p
+      v-for="decoration in decorations"
+      :key="decoration"
+    >
+      <a
+        href="#"
+        :class="`text-decoration--${decoration}`"
+      >
+        {{ `${decoration} text.` }}
+      </a>
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    decorations: ['none', 'line-through', 'overline', 'underline']
+  })
+}
+</script>

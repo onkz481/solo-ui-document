@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <su-checkbox
+      v-model="check"
+    />
+
+    <su-input
+      v-model="text"
+      :rules="rules"
+    >
+      {{ text }}
+    </su-input>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    check: true,
+    rules: [
+      v => !!v || 'required.',
+    ]
+  }),
+  computed: {
+    text(){
+      return this.check ? 'text' : ''
+    }
+  }
+}
+</script>

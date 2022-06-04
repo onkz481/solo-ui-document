@@ -1,0 +1,15 @@
+<template>
+  <su-input
+    prepend-icon="mdi-home"
+    append-icon="mdi-home"
+    hint="hint"
+    :messages="['messages']"
+  >
+    <div
+      class="d-flex align-center"
+      style="width: 100%; border: 1px dashed #fff;"
+    >
+      Default Slot
+    </div>
+  </su-input>
+</template>

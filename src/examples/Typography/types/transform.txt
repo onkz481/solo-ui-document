@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <p
+      v-for="transform in transforms"
+      :key="transform"
+      :class="`text-transform--${transform}`"
+    >
+      {{ `${transform} text.` }}
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    transforms: ['capitalize', 'uppercase', 'lowercase']
+  })
+}
+</script>

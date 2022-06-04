@@ -1,0 +1,29 @@
+<template>
+  <su-container>
+    <su-row
+      justify="center"
+    >
+      <su-col
+        v-for="rounded in roundeds"
+        :key="rounded"
+        cols="4"
+      >
+        <su-sheet
+          class="mx-auto"
+          width="100"
+          height="100"
+          :rounded="rounded"
+          color="#ffffff"
+        />
+      </su-col>
+    </su-row>
+  </su-container>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    roundeds: ['none', 'small', 'normal', 'medium', 'large']
+  })
+}
+</script>

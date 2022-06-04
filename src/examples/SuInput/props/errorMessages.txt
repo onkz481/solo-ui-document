@@ -1,0 +1,10 @@
+<template>
+  <su-input
+    hint="hint"
+    :messages="['text line 1', 'text line 2']"
+    :error-messages="['error text 1', 'error text 2']"
+    error
+  >
+    Default Slot
+  </su-input>
+</template>

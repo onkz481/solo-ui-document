@@ -1,0 +1,7 @@
+<template>
+  <su-row
+    justify="center"
+  >
+    <su-btn>Button</su-btn>
+  </su-row>
+</template>

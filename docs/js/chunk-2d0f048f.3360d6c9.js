@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0f048f"],{"9c5d":function(a,e){(function(a){a.languages.etlua={delimiter:{pattern:/^<%[-=]?|-?%>$/,alias:"punctuation"},"language-lua":{pattern:/[\s\S]+/,inside:a.languages.lua}},a.hooks.add("before-tokenize",(function(e){var n=/<%[\s\S]+?%>/g;a.languages["markup-templating"].buildPlaceholders(e,"etlua",n)})),a.hooks.add("after-tokenize",(function(e){a.languages["markup-templating"].tokenizePlaceholders(e,"etlua")}))})(Prism)}}]);
+//# sourceMappingURL=chunk-2d0f048f.3360d6c9.js.map

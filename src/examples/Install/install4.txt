@@ -1,0 +1,11 @@
+// src/main.js
+
+import Vue from 'vue'
+import soloui from './plugins/soloui'
+
+...
+
+new Vue({
+  soloui,
+  ...
+}).$mount('#app')

@@ -1,0 +1,36 @@
+<template>
+  <div
+    class="d-flex"
+  >
+    <su-text-field
+      label="label"
+      prepend-icon="mdi-message"
+      prepend-inner-icon="mdi-emoticon-outline"
+      append-icon="mdi-send"
+      append-inner-icon="mdi-close"
+      @click:prepend="clickPrependOuter"
+      @click:prepend-inner="clickPrependInner"
+      @click:append="clickAppendOuter"
+      @click:append-inner="clickAppendInner"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    clickPrependOuter(){
+      alert('Click Prepend !')
+    },
+    clickPrependInner(){
+      alert('Click Prepend Inner !')
+    },
+    clickAppendOuter(){
+      alert('Click Append !')
+    },
+    clickAppendInner(){
+      alert('Click Append Inner !')
+    }
+  }
+}
+</script>

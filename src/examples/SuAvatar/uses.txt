@@ -1,0 +1,23 @@
+<template>
+  <su-row
+    justify="space-around"
+  >
+    <su-avatar
+      color="secondary"
+    >
+      <img src="https://joeschmoe.io/api/v1/random">
+    </su-avatar>
+
+    <su-avatar
+      color="primary"
+    >
+      <su-icon>mdi-home</su-icon>
+    </su-avatar>
+
+    <su-avatar
+      color="primary"
+    >
+      <span class="text-h6">TE</span>
+    </su-avatar>
+  </su-row>
+</template>

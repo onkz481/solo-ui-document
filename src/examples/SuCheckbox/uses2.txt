@@ -1,0 +1,28 @@
+<template>
+  <div
+    class="d-flex align-start justify-center"
+    style="flex-flow: column;"
+  >
+    <p>{{ selected }}</p>
+        
+    <su-checkbox
+      v-model="selected"
+      value="box 1"
+      label="box 1"
+    />
+
+    <su-checkbox
+      v-model="selected"
+      value="box 2"
+      label="box 2"
+    />
+  </div>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      selected: []
+    })
+  }
+</script>

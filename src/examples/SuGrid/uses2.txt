@@ -1,0 +1,23 @@
+<template>
+  <su-container
+    class="secondary"
+  >
+    <su-row
+      no-gutters
+    >
+      <su-spacer />
+
+      <su-col
+        cols="3"
+      >
+        <su-card
+          class="p-2"
+          rounded="none"
+          outlined
+        >
+          columns
+        </su-card>
+      </su-col>
+    </su-row>
+  </su-container>
+</template>

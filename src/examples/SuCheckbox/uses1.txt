@@ -1,0 +1,18 @@
+<template>
+  <div
+    class="d-flex align-center justify-center"
+  >
+    <su-checkbox
+      v-model="checked"
+      :label="`checked: ${checked.toString()}`"
+    />
+  </div>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      checked: false
+    })
+  }
+</script>

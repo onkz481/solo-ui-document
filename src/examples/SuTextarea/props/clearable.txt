@@ -1,0 +1,10 @@
+<template>
+  <div
+    class="d-flex"
+  >
+    <su-textarea
+      label="label"
+      clearable
+    />
+  </div>
+</template>

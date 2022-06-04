@@ -1,0 +1,16 @@
+<template>
+  <div
+    class="flex-box"
+  >
+    <su-radio-group>
+      <su-radio
+        v-for="n in 3"
+        :key="n"
+        :label="`Radio ${n}`"
+        :value="`Radio ${n}`"
+        on-icon="mdi-check-circle-outline"
+        off-icon="mdi-radiobox-blank"
+      />
+    </su-radio-group>
+  </div>
+</template>

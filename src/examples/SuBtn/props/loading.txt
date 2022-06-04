@@ -1,0 +1,29 @@
+<template>
+  <su-row
+    justify="center"
+  >
+    <su-btn
+      :loading="loading"
+      @click="sampleLoading"
+    >
+      button
+    </su-btn>
+  </su-row>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      loading: false
+    }),
+    methods: {
+      sampleLoading(){
+        this.loading = true;
+
+        window.setTimeout(() => {
+          this.loading = false;
+        }, 1000);
+      }
+    }
+  }
+</script>

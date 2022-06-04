@@ -1,0 +1,11 @@
+<template>
+  <su-card
+    max-width="400"
+    class="mx-auto"
+  >
+    <su-data-list
+      :items="[]"
+      empty-text="Customized empty text."
+    />
+  </su-card>
+</template>

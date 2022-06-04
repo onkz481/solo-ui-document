@@ -1,0 +1,42 @@
+<template>
+  <div>
+    <su-banner>
+      <template v-slot:icon>
+        <su-icon>
+          mdi-information-outline
+        </su-icon>
+      </template>
+
+      {{ dummyText }}
+
+      <template v-slot:actions>
+        <su-btn
+          text
+        >
+          action1
+        </su-btn>
+        
+        <su-btn
+          text
+        >
+          action2
+        </su-btn>
+      </template>
+    </su-banner>
+
+    <su-text-field
+      v-model="dummyText"
+      class="mt-4"
+      rounded="normal"
+      hint="dummy text."
+    />
+  </div>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      dummyText: 'This sentence is a dummy.'
+    })
+  }
+</script>

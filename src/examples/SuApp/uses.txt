@@ -1,0 +1,18 @@
+<template>
+  <su-app>
+    <su-header>
+      <!-- -->
+    </su-header>
+
+    <su-nav>
+      <!-- -->
+    </su-nav>
+
+    <su-main>
+      <!-- -->
+
+      <!-- vue-router -->
+      <router-view />
+    </su-main>
+  </su-app>
+</template>

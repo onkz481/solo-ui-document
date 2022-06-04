@@ -1,0 +1,32 @@
+<template>
+  <su-row
+    justify="space-around"
+  >
+    <su-btn
+      outlined
+    >
+      button
+    </su-btn>
+
+    <su-btn
+      color="primary"
+      outlined
+    >
+      button
+    </su-btn>
+    
+    <su-btn
+      color="error"
+      outlined
+    >
+      button
+    </su-btn>
+
+    <su-btn
+      color="#2676839c"
+      outlined
+    >
+      button
+    </su-btn>
+  </su-row>
+</template>

@@ -1,0 +1,16 @@
+{
+  header: {
+    width: Number
+  },
+  nav: {
+    gutterWidth: Number,
+    width: Number
+  },
+  main: {
+    width: Number,
+    centerWidth: Number,
+    rightWidth: Number
+  },
+  mobile: Boolean,
+  narrow: Boolean,
+}

@@ -1,0 +1,50 @@
+<template>
+  <su-row
+    no-gutters
+  >
+    <su-col
+      v-for="transition in transitions"
+      :key="transition.name"
+      class="text--center mb-4"
+      cols="6"
+    >
+      <su-btn
+        class="mb-4"
+        @click="transition.value = !transition.value"
+      >
+        {{ transition.name }}
+      </su-btn>
+
+      <su-transition
+        :transition="transition.name"
+      >
+        <su-card
+          v-show="transition.value"
+          class="mx-auto"
+          color="secondary"
+          width="100"
+          height="100"
+        />
+      </su-transition>
+    </su-col>
+  </su-row>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    transitions: [
+      { name: 'fade', value: true },
+      { name: 'scale', value: true },
+      { name: 'slide-x', value: true },
+      { name: 'slide-x-reverse', value: true },
+      { name: 'slide-y', value: true },
+      { name: 'slide-y-reverse', value: true },
+      { name: 'scroll-x', value: true },
+      { name: 'scroll-x-reverse', value: true },
+      { name: 'scroll-y', value: true },
+      { name: 'scroll-y-reverse', value: true },
+    ],
+  })
+}
+</script>

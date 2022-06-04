@@ -1,0 +1,10 @@
+<template>
+  <div
+    class="d-flex align-center justify-center"
+    style="height: 400px;"
+  >
+    <su-divider
+      vertical
+    />
+  </div>
+</template>

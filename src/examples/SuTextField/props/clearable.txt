@@ -1,0 +1,10 @@
+<template>
+  <div
+    class="d-flex"
+  >
+    <su-text-field
+      label="label"
+      clearable
+    />
+  </div>
+</template>

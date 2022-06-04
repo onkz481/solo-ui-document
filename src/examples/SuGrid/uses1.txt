@@ -1,0 +1,22 @@
+<template>
+  <su-container
+    class="secondary"
+  >
+    <su-row
+      no-gutters
+    >
+      <su-col
+        v-for="n in 3"
+        :key="n"
+      >
+        <su-card
+          class="p-2"
+          rounded="none"
+          outlined
+        >
+          columns
+        </su-card>
+      </su-col>
+    </su-row>
+  </su-container>
+</template>

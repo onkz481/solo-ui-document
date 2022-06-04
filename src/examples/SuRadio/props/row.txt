@@ -1,0 +1,32 @@
+<template>
+  <div
+    class="flex-box"
+  >
+    <su-radio-group
+      column
+    >
+      <su-radio
+        v-for="n in 3"
+        :key="n"
+        :label="`Radio ${n}`"
+        :value="`Radio ${n}`"
+      />
+    </su-radio-group>
+
+    <su-divider
+      style="width: 100%;"
+      class="mb-4"
+    />
+
+    <su-radio-group
+      row
+    >
+      <su-radio
+        v-for="n in 3"
+        :key="n"
+        :label="`Radio ${n}`"
+        :value="`Radio ${n}`"
+      />
+    </su-radio-group>
+  </div>
+</template>

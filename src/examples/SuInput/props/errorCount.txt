@@ -1,0 +1,20 @@
+<template>
+  <su-input
+    hint="hint"
+    error-count="2"
+    :rules="rules"
+  >
+    Default Slot
+  </su-input>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    rules: [
+      v => !!v || 'required1.',
+      v => !!v || 'required2.'
+    ]
+  })
+}
+</script>

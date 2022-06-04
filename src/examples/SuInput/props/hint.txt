@@ -1,0 +1,7 @@
+<template>
+  <su-input
+    hint="hint"
+  >
+    Default Slot
+  </su-input>
+</template>

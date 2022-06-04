@@ -1,0 +1,57 @@
+<template>
+  <div>
+    <su-checkbox
+      v-model="left"
+      label="left"
+    />
+
+    <su-row
+      justify="center"
+    >
+      <su-menu
+        offset-x
+        :left="left"
+      >
+        <template v-slot:activator="{ on }">
+          <su-btn
+            v-on="on"
+          >
+            menu
+          </su-btn>
+        </template>
+
+        <su-card>
+          <su-list>
+            <su-list-item
+              link
+            >
+              <su-list-item-content>
+                <su-list-item-title>
+                  List 1
+                </su-list-item-title>
+              </su-list-item-content>
+            </su-list-item>
+
+            <su-list-item
+              link
+            >
+              <su-list-item-content>
+                <su-list-item-title>
+                  List 1
+                </su-list-item-title>
+              </su-list-item-content>
+            </su-list-item>
+          </su-list>
+        </su-card>
+      </su-menu>
+    </su-row>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    left: false
+  })
+}
+</script>

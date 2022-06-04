@@ -1,0 +1,93 @@
+<template>
+  <su-sheet
+    class="overflow-y-auto"
+    max-height="600"
+  >
+    <su-sheet
+      v-for="[c, text, weight, size, letter] in headings"
+      :key="c"
+      class="p-3 mb-2"
+    >
+      <div
+        :class="[
+          `text-${c}`,
+          'pb-4'
+        ]"
+      >
+        {{ text }}
+      </div>
+
+      <su-sheet
+        class="d-flex justify-space-between text-caption"
+        color="transparent"
+        max-width="350"
+      >
+        <div>
+          <div
+            class="text--secondary mb-1"
+            v-text="'Font'"
+          />
+
+          <div
+            v-text="'Noto Sans JP'"
+          />
+        </div>
+
+        <div>
+          <div
+            class="text--secondary mb-1"
+            v-text="'Weight'"
+          />
+
+          <div
+            v-text="weight"
+          />
+        </div>
+
+        <div>
+          <div
+            class="text--secondary mb-1"
+            v-text="'Size'"
+          />
+
+          <div
+            v-text="size"
+          />
+        </div>
+
+        <div>
+          <div
+            class="text--secondary mb-1"
+            v-text="'Letter spacing'"
+          />
+
+          <div
+            v-text="letter"
+          />
+        </div>
+      </su-sheet>
+    </su-sheet>
+  </su-sheet>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    headings: [
+      ['h1', 'Heading 1', '300', '5.8125rem', '-1.5px'],
+      ['h2', 'Heading 2', '300', '3.625rem', '-0.5px'],
+      ['h3', 'Heading 3', '400', '2.9375rem', '0px'],
+      ['h4', 'Heading 4', '400', '2.0625rem', '0.25px'],
+      ['h5', 'Heading 5', '400', '1.4375rem', '0px'],
+      ['h6', 'Heading 6', '500', '1.1875rem', '0px'],
+      ['subtitle-1', 'Subtitle 1', '400', '.9375rem', '0.15px'],
+      ['subtitle-2', 'Subtitle 2', '500', '.8125rem', '0.1px'],
+      ['body-1', 'Body 1', '400', '1rem', '0.5px'],
+      ['body-2', 'Body 2', '400', '.875rem', '0.25px'],
+      ['button', 'Button', '500', '.875rem', '1.25px'],
+      ['caption', 'Caption', '400', '.75rem', '0.4px'],
+      ['overline', 'Overline', '400', '.625rem', '1.5px'],
+    ]
+  })
+}
+</script>

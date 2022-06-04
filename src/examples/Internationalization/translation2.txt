@@ -1,0 +1,20 @@
+// src/plugins/soloui.js
+
+import Vue from 'vue'
+import SoloUi from 'solo-ui'
+
+Vue.use(SoloUi)
+
+import en from 'src/locales/en'
+
+const opts = {
+  ...
+  lang: {
+    ...
+    locales: {
+      en: en
+    }
+  }
+}
+
+export default new SoloUi(opts)

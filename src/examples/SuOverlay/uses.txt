@@ -1,0 +1,27 @@
+<template>
+  <div>
+    <su-row
+      justify="center"
+    >
+      <su-btn @click="overlay = !overlay">
+        Show Overlay
+      </su-btn>
+    </su-row>
+
+    <su-overlay
+      :value="overlay"
+    >
+      <su-btn @click="overlay = !overlay">
+        hide overlay
+      </su-btn>
+    </su-overlay>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    overlay: false
+  })
+}
+</script>

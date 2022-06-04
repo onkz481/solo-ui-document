@@ -1,0 +1,9 @@
+<template>
+  <div
+    class="d-flex"
+  >
+    <su-text-field
+      label="label"
+    />
+  </div>
+</template>

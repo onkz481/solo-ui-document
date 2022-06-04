@@ -1,0 +1,50 @@
+<template>
+  <su-row
+    justify="center"
+  >
+    <su-dialog
+      v-model="dialog"
+      :min-width="400"
+    >
+      <template v-slot:activator="{ on }">
+        <su-btn
+          v-on="on"
+        >
+          show dialog
+        </su-btn>
+      </template>
+
+      <su-card>
+        <su-card-title>
+          Dialog
+        </su-card-title>
+
+        <su-divider />
+
+        <su-card-content>
+          Dialog Content
+        </su-card-content>
+
+        <su-divider />
+
+        <su-card-actions>
+          <su-spacer />
+
+          <su-btn
+            @click="dialog = !dialog"
+          >
+            close
+          </su-btn>
+        </su-card-actions>
+      </su-card>
+    </su-dialog>
+  </su-row>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      dialog: false
+    })
+  }
+</script>

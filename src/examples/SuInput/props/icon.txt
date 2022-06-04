@@ -1,0 +1,8 @@
+<template>
+  <su-input
+    prepend-icon="mdi-home"
+    append-icon="mdi-home"
+  >
+    Default Slot
+  </su-input>
+</template>

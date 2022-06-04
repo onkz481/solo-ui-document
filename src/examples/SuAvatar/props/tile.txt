@@ -1,0 +1,12 @@
+<template>
+  <su-row
+    justify="space-around"
+  >
+    <su-avatar
+      color="secondary"
+      tile
+    >
+      <img src="https://joeschmoe.io/api/v1/random">
+    </su-avatar>
+  </su-row>
+</template>

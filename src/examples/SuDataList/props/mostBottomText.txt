@@ -1,0 +1,27 @@
+<template>
+  <su-card
+    max-width="400"
+    class="mx-auto"
+  >
+    <su-data-list
+      :items="[
+        { title: 'Item 1', icon: 'mdi-account-circle' }
+      ]"
+      :to="1"
+      :total="1"
+      most-bottom-text="Customized bottom text."
+    >
+      <template v-slot:default="{ item }">
+        <su-list-item>
+          <su-list-item-icon>
+            <su-icon>{{ item.icon }}</su-icon>
+          </su-list-item-icon>
+
+          <su-list-item-content>
+            <su-list-item-title>{{ item.title }}</su-list-item-title>
+          </su-list-item-content>
+        </su-list-item>
+      </template>
+    </su-data-list>
+  </su-card>
+</template>

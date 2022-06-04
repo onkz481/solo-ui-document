@@ -1,0 +1,56 @@
+<template>
+  <su-row
+    no-gutters
+  >
+    <su-col
+      class="text--center"
+    >
+      <su-btn
+        class="mb-4"
+        @click="transition = !transition"
+      >
+        transition
+      </su-btn>
+      
+      <su-transition>
+        <su-card
+          v-show="transition"
+          class="mx-auto"
+          color="secondary"
+          width="100"
+          height="100"
+        />
+      </su-transition>
+    </su-col>
+
+    <su-col
+      class="text--center"
+    >
+      <su-btn
+        class="mb-4"
+        @click="expand = !expand"
+      >
+        expand transition
+      </su-btn>
+
+      <su-expand-transition>
+        <su-card
+          v-show="expand"
+          class="mx-auto"
+          color="secondary"
+          width="100"
+          height="100"
+        />
+      </su-expand-transition>
+    </su-col>
+  </su-row>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    transition: true,
+    expand: true
+  })
+}
+</script>

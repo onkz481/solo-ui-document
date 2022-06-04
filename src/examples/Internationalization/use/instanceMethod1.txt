@@ -1,0 +1,6 @@
+<!-- src/components/my-component.vue -->
+
+<template>
+  <p v-text="$soloui.lang.t('key-1')">
+  <p v-text="$soloui.lang.t('key-3.deep-1')">
+</template>

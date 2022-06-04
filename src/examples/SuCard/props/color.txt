@@ -1,0 +1,41 @@
+<template>
+  <su-row
+    justify="space-around"
+  >
+    <su-col>
+      <su-card
+        color="primary"
+      >
+        <su-card-title>Card Title</su-card-title>
+
+        <su-card-subtitle>Card Sub Title</su-card-subtitle>
+
+        <su-card-content>Card Content</su-card-content>
+
+        <su-card-actions>
+          <su-btn text>
+            action 1
+          </su-btn>
+        </su-card-actions>
+      </su-card>
+    </su-col>
+
+    <su-col>
+      <su-card
+        color="error"
+      >
+        <su-card-title>Card Title</su-card-title>
+
+        <su-card-subtitle>Card Sub Title</su-card-subtitle>
+
+        <su-card-content>Card Content</su-card-content>
+
+        <su-card-actions>
+          <su-btn text>
+            action 1
+          </su-btn>
+        </su-card-actions>
+      </su-card>
+    </su-col>
+  </su-row>
+</template>

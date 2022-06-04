@@ -1,0 +1,11 @@
+// src/plugins/soloui.js
+
+import Vue from 'vue'
+import SoloUi from 'solo-ui'
+import 'solo-ui/dist/solo-ui.min.css'
+
+Vue.use(SoloUi)
+
+const opts = {}
+
+export default new SoloUi(opts)

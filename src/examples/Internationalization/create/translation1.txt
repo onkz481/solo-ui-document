@@ -1,0 +1,9 @@
+// src/locales/en/index.js
+
+export default {
+  'key-1': 'key 1 text',
+  'key-2': 'key 2 text',
+  'key-3': {
+    'deep-1': 'deep 1 text'
+  }
+}

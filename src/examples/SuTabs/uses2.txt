@@ -1,0 +1,49 @@
+<template>
+  <su-card>
+    <su-tabs
+      v-model="tab"
+    >
+      <su-tab
+        v-for="tab in tabItems"
+        :key="tab.id"
+      >
+        {{ tab.name }}
+      </su-tab>
+    </su-tabs>
+
+    <su-card-content>
+      <su-tabs-items
+        v-model="tab"
+      >
+        <su-tab-item
+          v-for="tab in tabItems"
+          :key="tab.id"
+        >
+          {{ tab.content }}
+        </su-tab-item>
+      </su-tabs-items>
+    </su-card-content>
+  </su-card>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    tab: 0
+  }),
+  computed: {
+    tabItems(){
+      let tabItems = [];
+      for(let i = 1; i <= 30; i++){
+        tabItems.push({
+          id: i,
+          name: 'Item name ' + i,
+          content: 'Content ' + i
+        });
+      }
+
+      return tabItems;
+    }
+  },
+}
+</script>

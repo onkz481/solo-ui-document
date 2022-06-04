@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <p
+      v-for="opacity in opacitys"
+      :key="opacity"
+      :class="`text--${opacity}`"
+    >
+      {{ `${opacity} text.` }}
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    opacitys: ['primary', 'secondary', 'disabled']
+  })
+}
+</script>

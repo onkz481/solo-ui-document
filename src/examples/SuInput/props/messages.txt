@@ -1,0 +1,8 @@
+<template>
+  <su-input
+    hint="hint"
+    :messages="['text line 1', 'text line 2']"
+  >
+    Default Slot
+  </su-input>
+</template>

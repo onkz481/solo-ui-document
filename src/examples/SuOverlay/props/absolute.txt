@@ -1,0 +1,34 @@
+<template>
+  <su-card
+    width="200"
+    height="300"
+    class="mx-auto"
+  >
+    <su-row
+      style="height: 100%;"
+      align="center"
+      justify="center"
+    >
+      <su-btn @click="overlay = !overlay">
+        Show Overlay
+      </su-btn>
+    </su-row>
+
+    <su-overlay
+      :value="overlay"
+      absolute
+    >
+      <su-btn @click="overlay = !overlay">
+        hide overlay
+      </su-btn>
+    </su-overlay>
+  </su-card>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    overlay: false
+  })
+}
+</script>

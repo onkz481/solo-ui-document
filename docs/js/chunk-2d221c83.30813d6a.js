@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d221c83"],{cc8e:function(p,a){Prism.languages.hpkp={directive:{pattern:/\b(?:includeSubDomains|max-age|pin-sha256|preload|report-to|report-uri|strict)(?=[\s;=]|$)/i,alias:"property"},operator:/=/,punctuation:/;/}}}]);
+//# sourceMappingURL=chunk-2d221c83.30813d6a.js.map

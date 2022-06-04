@@ -1,0 +1,84 @@
+<template>
+  <su-card
+    max-width="400"
+    class="mx-auto"
+  >
+    <su-data-list
+      :items="items"
+      :to="to"
+      :total="total"
+      :loading="loading"
+      @more="getItems"
+    >
+      <template v-slot:default="{ item }">
+        <su-list-item>
+          <su-list-item-icon>
+            <su-icon>{{ item.icon }}</su-icon>
+          </su-list-item-icon>
+
+          <su-list-item-content>
+            <su-list-item-title>{{ item.title }}</su-list-item-title>
+          </su-list-item-content>
+        </su-list-item>
+      </template>
+    </su-data-list>
+  </su-card>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      items: [],
+      to: 0,
+      total: 1,
+      loading: false,
+      dummyOptions: {
+        page: 1,
+        itemsPerPage: 5,
+        to: 0,
+        total: 15
+      },
+    }),
+    mounted(){
+      this.items = []
+
+      this.getItems()
+    },
+    methods: {
+      getItems(){
+        this.loading = true
+
+        this.dummyApi().then((res) => {
+          this.items.push(...res.data.data)
+
+          this.to = res.to
+          this.total = res.total
+
+          this.loading = false
+        })
+      },
+      dummyApi(){
+        return new Promise((resolve) => {
+          window.setTimeout(() => {
+            let data = []
+            for( let i = this.dummyOptions.to; i < (this.dummyOptions.to + this.dummyOptions.itemsPerPage); i++ ){
+                data.push({ id: i, title: 'item ' + (i + 1), icon: 'mdi-account-circle' })
+            }
+
+            this.dummyOptions.to += this.dummyOptions.itemsPerPage
+
+            this.dummyOptions.page++
+
+            resolve({
+              data: {
+                  data: data
+              },
+              to: this.dummyOptions.to,
+              total: this.dummyOptions.total
+            })
+          }, 1000)
+        })
+      },
+    }
+  }
+</script>

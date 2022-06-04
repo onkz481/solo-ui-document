@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <p
+      v-for="weight in weights"
+      :key="weight"
+      :class="`font-weight-${weight}`"
+    >
+      {{ `font-weight-${weight}` }}
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    weights: ['thin', 'light', 'regular', 'medium', 'bold', 'black']
+  })
+}
+</script>

@@ -1,0 +1,53 @@
+<template>
+  <su-container>
+    <su-row
+      v-for="align in alignments"
+      :key="align"
+      :align="align"
+      class="secondary mb-4"
+      style="height: 111px;"
+      no-gutters
+    >
+      <su-col
+        v-for="n in 3"
+        :key="n"
+      >
+        <su-card
+          class="p-2"
+          rounded="none"
+          outlined
+        >
+          columns
+        </su-card>
+      </su-col>
+    </su-row>
+
+    <su-row
+      class="secondary"
+      style="height: 111px;"
+      no-gutters
+    >
+      <su-col
+        v-for="align in alignments"
+        :key="align"
+        :align-self="align"
+      >
+        <su-card
+          class="p-2"
+          rounded="none"
+          outlined
+        >
+          columns
+        </su-card>
+      </su-col>
+    </su-row>
+  </su-container>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      alignments: ['start', 'center', 'end']
+    })
+  }
+</script>

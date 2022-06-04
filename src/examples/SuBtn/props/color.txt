@@ -1,0 +1,19 @@
+<template>
+  <su-row
+    justify="space-around"
+  >
+    <su-btn>button</su-btn>
+
+    <su-btn color="primary">
+      button
+    </su-btn>
+    
+    <su-btn color="error">
+      button
+    </su-btn>
+
+    <su-btn color="#2676839c">
+      button
+    </su-btn>
+  </su-row>
+</template>

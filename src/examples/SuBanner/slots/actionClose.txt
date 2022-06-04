@@ -1,0 +1,37 @@
+<template>
+  <div>
+    <su-checkbox
+      v-model="banner"
+      :label="`status: ${banner}`"
+    />
+
+    <su-banner
+      v-model="banner"
+    >
+      <template v-slot:icon>
+        <su-icon>
+          mdi-information-outline
+        </su-icon>
+      </template>
+
+      This sentence is a dummy. It is included to check the size, amount, character spacing, line spacing, etc. of characters.
+
+      <template v-slot:actions="{ close }">
+        <su-btn
+          text
+          @click="close"
+        >
+          close
+        </su-btn>
+      </template>
+    </su-banner>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    banner: true
+  })
+}
+</script>

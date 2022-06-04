@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <p
+      v-for="align in aligns"
+      :key="align"
+      :class="`text--${align}`"
+    >
+      {{ `This is the sample text to the ${align}.` }}
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    aligns: ['left', 'center', 'right']
+  })
+}
+</script>

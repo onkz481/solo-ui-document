@@ -1,0 +1,26 @@
+<template>
+  <su-card
+    max-width="400"
+    class="mx-auto"
+  >
+    <su-list>
+      <su-list-item>
+        <su-list-item-content>
+          <su-list-item-title>
+            SuList Item 1
+          </su-list-item-title>
+        </su-list-item-content>
+      </su-list-item>
+
+      <su-list-item
+        link
+      >
+        <su-list-item-content>
+          <su-list-item-title>
+            SuList Item 2
+          </su-list-item-title>
+        </su-list-item-content>
+      </su-list-item>
+    </su-list>
+  </su-card>
+</template>
