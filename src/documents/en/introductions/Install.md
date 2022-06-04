@@ -20,8 +20,8 @@ Create a SoloUI plug-in file with the following contents (the file creation loca
 // src/plugins/soloui.js
 
 import Vue from 'vue'
-import SoloUi from 'solo-ui'
-import 'solo-ui/dist/solo-ui.min.css'
+import SoloUi from '@onkz481/solo-ui'
+import '@onkz481/solo-ui/dist/solo-ui.min.css'
 
 Vue.use(SoloUi)
 
