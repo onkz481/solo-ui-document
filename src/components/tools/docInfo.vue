@@ -94,6 +94,8 @@ export default {
     setUrl(type){
       const doc = this.$docs[type]
       
+      this[type] = undefined
+      
       if( !doc ) return
 
       this[type] = doc
