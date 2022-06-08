@@ -22,7 +22,7 @@
         :prepend-icon="route.icon"
         :group="`/${category}/`"
       >
-        <template v-slot:activator>
+        <template #activator>
           <su-list-item-content>
             <su-list-item-title>{{ route.title }}</su-list-item-title>
           </su-list-item-content>
@@ -44,6 +44,7 @@
 
 <script>
 export default {
+  name: 'AppNav',
   props: {
     value: {
       type: Boolean,

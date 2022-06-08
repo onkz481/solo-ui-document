@@ -1,0 +1,2 @@
+(self["webpackChunk_onkz481_solo_ui_document"]=self["webpackChunk_onkz481_solo_ui_document"]||[]).push([[79958],{79958:function(){(function(e){e.languages.etlua={delimiter:{pattern:/^<%[-=]?|-?%>$/,alias:"punctuation"},"language-lua":{pattern:/[\s\S]+/,inside:e.languages.lua}},e.hooks.add("before-tokenize",(function(a){var n=/<%[\s\S]+?%>/g;e.languages["markup-templating"].buildPlaceholders(a,"etlua",n)})),e.hooks.add("after-tokenize",(function(a){e.languages["markup-templating"].tokenizePlaceholders(a,"etlua")}))})(Prism)}}]);
+//# sourceMappingURL=79958.8cab7d5d.js.map

@@ -33,7 +33,7 @@
     <su-menu
       offset-y
     >
-      <template v-slot:activator="{ on }">
+      <template #activator="{ on }">
         <su-btn
           icon
           text
@@ -74,7 +74,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'AppHeader',
   inject: ['hasNav'],
   props: {
     value: {

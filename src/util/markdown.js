@@ -94,7 +94,7 @@ export function genMarkdownBody(str, components = {}){
   const mdText = md.render(str)
   const res = Vue.compile(`<div>${mdText}</div>`)
 
-  return Vue.component('vueMarkdownBody', {
+  return Vue.component('VueMarkdownBody', {
     components,
     render: res.render,
     staticRenderFns: res.staticRenderFns

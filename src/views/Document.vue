@@ -60,13 +60,25 @@ function onRouteChange( params ){
 }
 
 export default {
-  name: 'Document',
+  name: 'ViewDocument',
+  components: { Header, Nav, docInfo },
   provide(){
     return {
       hasNav: true
     }
   },
-  components: { Header, Nav, docInfo },
+  beforeRouteEnter( to, from, next ){
+    next(async (vm) => {
+      await vm.onRouteChange(to.params)
+
+      next()
+    })
+  },
+  beforeRouteUpdate( to, from, next ){
+    this.onRouteChange(to.params)
+
+    next()
+  },
   props: {
     categories: {
       type: String,
@@ -89,17 +101,5 @@ export default {
   methods: {
     onRouteChange
   },
-  beforeRouteEnter( to, from, next ){
-    next(async (vm) => {
-      await vm.onRouteChange(to.params)
-
-      next()
-    })
-  },
-  beforeRouteUpdate( to, from, next ){
-    this.onRouteChange(to.params)
-
-    next()
-  }
 }
 </script>

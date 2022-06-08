@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./node_modules/prismjs/components/prism-csv.min.js"],"names":["Prism","languages","csv","value","punctuation"],"mappings":"mGAAAA,MAAMC,UAAUC,IAAI,CAACC,MAAM,iCAAiCC,YAAY","file":"js/chunk-2d0de3fe.4510b4fc.js","sourcesContent":["Prism.languages.csv={value:/[^\\r\\n,\"]+|\"(?:[^\"]|\"\")*\"(?!\")/,punctuation:/,/};"],"sourceRoot":""}

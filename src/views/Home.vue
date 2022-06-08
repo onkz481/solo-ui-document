@@ -37,13 +37,20 @@ function onRouteChange(){
 }
 
 export default {
-  name: 'Home',
+  name: 'ViewHome',
+  components: { Header },
   provide(){
     return {
       hasNav: false
     }
   },
-  components: { Header },
+  beforeRouteEnter( to, from, next ){
+    next(async (vm) => {
+      await vm.onRouteChange(to.params)
+
+      next()
+    })
+  },
   data: () => ({
     drawer: false,
     component: undefined
@@ -55,13 +62,6 @@ export default {
   },
   methods: {
     onRouteChange
-  },
-  beforeRouteEnter( to, from, next ){
-    next(async (vm) => {
-      await vm.onRouteChange(to.params)
-
-      next()
-    })
   },
 }
 </script>

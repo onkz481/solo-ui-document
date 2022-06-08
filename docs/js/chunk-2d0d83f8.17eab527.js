@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d83f8"],{"79ee":function(n,e){!function(n){function e(e,a){n.languages[e]&&n.languages.insertBefore(e,"comment",{"doc-comment":a})}var a=n.languages.markup.tag,t={pattern:/\/\/\/.*/,greedy:!0,alias:"comment",inside:{tag:a}},s={pattern:/'''.*/,greedy:!0,alias:"comment",inside:{tag:a}};e("csharp",t),e("fsharp",t),e("vbnet",s)}(Prism)}}]);
-//# sourceMappingURL=chunk-2d0d83f8.17eab527.js.map
