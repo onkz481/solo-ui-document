@@ -2,7 +2,6 @@ import Install from './Install'
 import Internationalization from './Internationalization'
 import Typography from './Typography'
 import Transition from './Transition'
-import SuApp from './SuApp'
 import SuAvatar from './SuAvatar'
 import SuBanner from './SuBanner'
 import SuBtn from './SuBtn'
@@ -30,7 +29,6 @@ export default {
   Internationalization,
   Typography,
   Transition,
-  SuApp,
   SuAvatar,
   SuBanner,
   SuBtn,

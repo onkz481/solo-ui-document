@@ -2,43 +2,75 @@
   <su-nav
     v-model="internalValue"
   >
-    <template
-      v-if="!$soloui.layout.narrow"
-    >
-      <su-card-title>
-        <div>Document</div>
-      </su-card-title>
-
-      <su-divider />
-    </template>
-
-    <su-list
-      shrink
-      nav
-    >
-      <su-list-group
-        v-for="route, category in genRoutes"
-        :key="category"
-        :prepend-icon="route.icon"
-        :group="`/${category}/`"
+    <su-card>
+      <template
+        v-if="!$soloui.layout.narrow"
       >
-        <template #activator>
-          <su-list-item-content>
-            <su-list-item-title>{{ route.title }}</su-list-item-title>
-          </su-list-item-content>
-        </template>
+        <su-card-title>
+          <div>Document</div>
+        </su-card-title>
 
-        <su-list-item
-          v-for="doc in route.documents"
-          :key="doc.name"
-          :to="`/${category}/${doc.name}`"
+        <su-divider />
+      </template>
+
+      <su-list
+        shrink
+      >
+        <su-list-group
+          v-for="route, category in genRoutes"
+          :key="category"
+          :prepend-icon="route.icon"
+          :group="`/${category}/`"
         >
-          <su-list-item-content>
-            <su-list-item-title>{{ doc.title }}</su-list-item-title>
-          </su-list-item-content>
-        </su-list-item>
-      </su-list-group>
-    </su-list>
+          <template #activator>
+            <su-list-item-content>
+              <su-list-item-title>{{ route.title }}</su-list-item-title>
+            </su-list-item-content>
+          </template>
+
+          <su-list-item
+            v-for="doc in route.documents"
+            :key="doc.name"
+            :to="`/${category}/${doc.name}`"
+          >
+            <su-list-item-content>
+              <su-list-item-title>{{ doc.title }}</su-list-item-title>
+            </su-list-item-content>
+          </su-list-item>
+        </su-list-group>
+      </su-list>
+    </su-card>
+
+    <template #narrow>
+      <su-card>
+        <su-list
+          shrink
+        >
+          <su-list-group
+            v-for="route, category in genRoutes"
+            :key="category"
+            :prepend-icon="route.icon"
+            :group="`/${category}/`"
+          >
+            <template #activator>
+              <su-list-item-content>
+                <su-list-item-title>{{ route.title }}</su-list-item-title>
+              </su-list-item-content>
+            </template>
+
+            <su-list-item
+              v-for="doc in route.documents"
+              :key="doc.name"
+              :to="`/${category}/${doc.name}`"
+            >
+              <su-list-item-content>
+                <su-list-item-title>{{ doc.title }}</su-list-item-title>
+              </su-list-item-content>
+            </su-list-item>
+          </su-list-group>
+        </su-list>
+      </su-card>
+    </template>
   </su-nav>
 </template>
 

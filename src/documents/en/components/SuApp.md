@@ -17,6 +17,14 @@ The `su-header`, `su-nav`, and `su-main` components are provided to make layout 
 
     <su-nav>
       <!-- -->
+
+      <template #narrow>
+        <!-- -->
+      </template>
+
+      <template #mobile>
+        <!-- -->
+      </template>
     </su-nav>
 
     <su-main>
@@ -24,6 +32,10 @@ The `su-header`, `su-nav`, and `su-main` components are provided to make layout 
 
       <!-- vue-router -->
       <router-view />
+
+      <template #right>
+        <!-- -->
+      </template>
     </su-main>
   </su-app>
 </template>
@@ -37,11 +49,17 @@ Provides a header component that is always placed at the top of the application.
 
 ##### Nav
 
-Place the navigation on the left side of the application. The navigation drawer automatically switches depending on the screen size.
+Place the navigation on the left side of the application. Switch between 3 slots according to screen size.
+
+* If the width of the display area is greater than **1280px**: `default`
+* If the width of the display area is greater than **720px** and less than **1280px**: `narrow`
+* If the width of the display area is **720px** or less: `mobile`
+
+※These are the thresholds when the Solo UI options are the default.{.error--text}
 
 ##### Main
 
-Provides an area to display the main content.
+Provides an area to display the main content. You can also use the `right` slot to create a widget area to the right of the display area.
 
 #### Layout
 
