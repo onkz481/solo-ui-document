@@ -111,6 +111,9 @@ export default Vue.extend({
       var self = this
 
       const tabs = this.$createElement(SuTabs, {
+        props: {
+          value: self.tab
+        },
         on: {
           input: function(event){
             self.tab = event
@@ -122,7 +125,7 @@ export default Vue.extend({
 
       const tabsItems = this.$createElement(SuTabsItems, {
         props: {
-          modelValue: this.tab
+          value: this.tab
         }
       }, Object.keys(this.codes).map(key => {
         const code = this.$createElement(SuCode, {
