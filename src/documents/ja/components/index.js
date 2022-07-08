@@ -14,6 +14,9 @@ import SuItemGroup from './SuItemGroup.md'
 import SuList from './SuList.md'
 import SuMenu from './SuMenu.md'
 import SuOverlay from './SuOverlay.md'
+import SuProgress from './SuProgress.md'
+import SuProgressCircle from './SuProgressCircle.md'
+import SuProgressLine from './SuProgressLine.md'
 import SuRadio from './SuRadio.md'
 import SuSheet from './SuSheet.md'
 import SuSlideGroup from './SuSlideGroup.md'
@@ -38,6 +41,9 @@ export default {
   SuList,
   SuMenu,
   SuOverlay,
+  SuProgress,
+  SuProgressCircle,
+  SuProgressLine,
   SuRadio,
   SuSheet,
   SuSlideGroup,
