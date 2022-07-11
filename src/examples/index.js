@@ -1,53 +1,26 @@
-import Install from './Install'
-import Internationalization from './Internationalization'
-import Typography from './Typography'
-import Transition from './Transition'
-import SuAvatar from './SuAvatar'
-import SuBanner from './SuBanner'
-import SuBtn from './SuBtn'
-import SuCard from './SuCard'
-import SuCheckbox from './SuCheckbox'
-import SuDataList from './SuDataList'
-import SuDialog from './SuDialog'
-import SuDivider from './SuDivider'
-import SuGrid from './SuGrid'
-import SuIcon from './SuIcon'
-import SuInput from './SuInput'
-import SuItemGroup from './SuItemGroup'
-import SuList from './SuList'
-import SuMenu from './SuMenu'
-import SuOverlay from './SuOverlay'
-import SuRadio from './SuRadio'
-import SuSheet from './SuSheet'
-import SuSlideGroup from './SuSlideGroup'
-import SuTabs from './SuTabs'
-import SuTextarea from './SuTextarea'
-import SuTextField from './SuTextField'
-
-export default {
-  Install,
-  Internationalization,
-  Typography,
-  Transition,
-  SuAvatar,
-  SuBanner,
-  SuBtn,
-  SuCard,
-  SuCheckbox,
-  SuDataList,
-  SuDialog,
-  SuDivider,
-  SuGrid,
-  SuIcon,
-  SuInput,
-  SuItemGroup,
-  SuList,
-  SuMenu,
-  SuOverlay,
-  SuRadio,
-  SuSheet,
-  SuSlideGroup,
-  SuTabs,
-  SuTextarea,
-  SuTextField,
-}
+export * as Install from './Install'
+export * as Internationalization from './Internationalization'
+export * as Typography from './Typography'
+export * as Transition from './Transition'
+export * as SuAvatar from './SuAvatar'
+export * as SuBanner from './SuBanner'
+export * as SuBtn from './SuBtn'
+export * as SuCard from './SuCard'
+export * as SuCheckbox from './SuCheckbox'
+export * as SuDataList from './SuDataList'
+export * as SuDialog from './SuDialog'
+export * as SuDivider from './SuDivider'
+export * as SuGrid from './SuGrid'
+export * as SuIcon from './SuIcon'
+export * as SuInput from './SuInput'
+export * as SuItemGroup from './SuItemGroup'
+export * as SuList from './SuList'
+export * as SuMenu from './SuMenu'
+export * as SuOverlay from './SuOverlay'
+export * as SuProgress from './SuProgress'
+export * as SuRadio from './SuRadio'
+export * as SuSheet from './SuSheet'
+export * as SuSlideGroup from './SuSlideGroup'
+export * as SuTabs from './SuTabs'
+export * as SuTextarea from './SuTextarea'
+export * as SuTextField from './SuTextField'

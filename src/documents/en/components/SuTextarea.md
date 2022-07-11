@@ -1,41 +1,25 @@
 ### Textarea
 
-The `su-textarea` component helps you enter large amounts of text data. Also, because we are using the `su-input` component internally, we can use the properties of the <r-link to="components/SuInput">SuInput</r-link> document.
+The `su-textarea` component helps you enter large amounts of text data.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-The `su-textarea` component works independently.
+<sample />
 
-<example file='SuTextarea/uses' />
-
-#### Sample
+#### Options
 
 ##### Props
 
-###### Clearable
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| auto-grow | boolean | false | The height of the input field is automatically adjusted according to the entered text. |
+| row-height | number | 28 | Sets the height of the line of text entered. |
+| rows | number | 5 | Specifies the height of the input field in rows. |
 
-If **clearable** is specified, a button will be added to delete all input values.
+##### Extends
 
-<example file='SuTextarea/props/clearable' />
+This component has been extended by the following components: This inherits the options used by the source component.
 
-###### Icon
-
-You can use the **prepend-icon**, **append-icon**, **prepend-inner-icon**, and **append-inner-icon** properties to place icons outside and inside the input field.
-
-<example file='SuTextarea/props/icon' />
-
-###### Label
-
-You can add a label to the input field using the **label** property.
-
-<example file='SuTextarea/props/label' />
-
-##### Events
-
-###### Icon
-
-You can use `click:prepare-inner`, `click:append-inner`, `click:prepare-outer`, and `click:append-outer` to set the click event for each icon.
-
-<example file='SuTextarea/events/icon' />
+- [TextField](/components/SuTextField)

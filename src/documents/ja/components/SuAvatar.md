@@ -8,30 +8,19 @@
 
 `su-avatar`コンポーネントは、デフォルトのスロットに`img`、`su-icon`、またはテキストを使用できます。
 
-<example file='SuAvatar/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Size
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|size|number|48|コンポーネントのサイズを指定します。|
 
-**size**プロパティを使用すると、`su-avatar`の高さと幅を設定できます。 これらは、**width**または**height**プロパティで上書きできます。
+##### Mixins
 
-<example file='SuAvatar/props/size' />
+このコンポーネントには、以下の共通プロパティがあります。
 
-###### Tile
-
-**tile**プロパティを使用して、アバターから**border radius**を削除できます。
-
-<example file='SuAvatar/props/tile' />
-
-#### その他
-
-##### Use
-
-###### 他のコンポーネントと組み合わせる
-
-`su-avatar`はいくつかのコンポーネントと組み合わせることができます。
-
-<example file='SuAvatar/others/use' />
+- [Colorable](/internals/mixins#Colorable)
+- [Roundable](/internals/mixins#Roundable)

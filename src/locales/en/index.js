@@ -24,7 +24,7 @@ export default {
       }
     },
     'components': {
-      'title': 'UI Components',
+      'title': 'Components',
       'documents': {
         'SuApp': 'Application',
         'SuAvatar': 'Avatar',
@@ -32,22 +32,38 @@ export default {
         'SuBtn': 'Button',
         'SuCard': 'Card',
         'SuCheckbox': 'Checkbox',
+        'SuCol': 'Col',
+        'SuContainer': 'Container',
         'SuDataList': 'DataList',
         'SuDialog': 'Dialog',
         'SuDivider': 'Divider',
         'SuGrid': 'Grid',
         'SuIcon': 'Icon',
+        'SuImg': 'Image',
         'SuInput': 'Input',
         'SuItemGroup': 'ItemGroup',
         'SuList': 'List',
         'SuMenu': 'Menu',
         'SuOverlay': 'Overlay',
+        'SuProgress': 'Progress',
+        'SuProgressCircle': 'ProgressCircle',
+        'SuProgressLine': 'ProgressLine',
         'SuRadio': 'Radio',
+        'SuRadioGroup': 'RadioGroup',
+        'SuRow': 'Row',
         'SuSheet': 'Sheet',
         'SuSlideGroup': 'SlideGroup',
+        'SuTable': 'Table',
         'SuTabs': 'Tabs',
         'SuTextarea': 'Textarea',
         'SuTextField': 'TextField',
+        'SuWindow': 'Window',
+      }
+    },
+    'internals': {
+      'title': 'Internals',
+      'documents': {
+        'mixins': 'Mixins'
       }
     }
   },

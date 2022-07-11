@@ -3,7 +3,7 @@ import uses2 from './uses2.txt'
 import props from './props'
 import others from './others'
 
-export default {
+export {
   uses1,
   uses2,
   props,

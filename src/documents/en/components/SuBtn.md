@@ -1,45 +1,37 @@
 ### Button
 
-The `su-btn` component replaces standard HTML buttons with customized buttons.
+The `su-btn` component replaces a standard HTML button with a customized button.
 
 <su-divider class="mb-8" />
 
-#### How to Use
+#### Usage
 
-The simplest buttons include uppercase text and hover effects.
+The simplest button contains uppercase text and a hover effect.
 
-<example file='SuBtn/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### Color
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|disabled|boolean|false|Disable the button. |
+|icon|boolean|false|Buttons will have a round design. |
+|large|boolean|false|Set the **Width** and **Height** of the component to "28px". |
+|loading|boolean|false|Tell the user that processing is in progress. |
+|outlined|boolean|false|Adds a border in the default color or the color specified in the color prop, makes the background transparent, and removes the shadow. |
+|rounded|string|'normal'||
+|small|boolean|false|Set the **Width** and **Height** of the component to "44px". |
+|tag|string|'button'||
+|text|boolean|false|Remove background and apply color to text. ||
 
-**color** allows you to color the component with the theme color or any color you like.
+##### Mixins
 
-<example file='SuBtn/props/color' />
+This component has the following common properties
 
-###### Outlined
-
-Specifying **outlined** adds a border of the default color or the color specified by **color prop**, makes the background transparent, and removes shadows.
-
-<example file='SuBtn/props/outlined' />
-
-###### Text
-
-You can specify **text** to implement a button without a background. When used with **color prop**, the specified color will be applied to the button text.
-
-<example file='SuBtn/props/text' />
-
-###### Loading
-
-**loading prop** is great for letting users know that processing is in progress.
-
-<example file='SuBtn/props/loading' />
-
-###### Icon
-
-If you specify **icon** prop, the button will have a round design.
-
-<example file='SuBtn/props/icon' />
+- [Colorable](/internals/mixins#Colorable)
+- [Dimensionable](/internals/mixins#Dimensionable)
+- [Elevatable](/internals/mixins#Elevatable)
+- [Roundable](/internals/mixins#Roundable)
+- [Themeable](/internals/mixins#Themeable)

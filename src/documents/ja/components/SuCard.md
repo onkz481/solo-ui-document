@@ -8,26 +8,18 @@
 
 `su-card-title`、`su-card-subtitle`、`su-card-content`、`su-card-actions`は、**su-card**の基本的なサブコンポーネントです。
 
-<example file='SuCard/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Color
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|rounded|string|'normal'||
 
-**color**を指定すると、テーマの色または任意の色でコンポーネントに色を付けることができます。
+##### Extends
 
-<example file='SuCard/props/color' />
+このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-###### Outlined
-
-**outlined**を指定すると、デフォルトの色、もしくはcolor propで指定された色の境界線が追加され、背景が透明になります。
-
-<example file='SuCard/props/outlined' />
-
-###### Text
-
-**text**を指定すると、**color prop**で指定された色がカードのテキストに適用されます。**outlined prop**と組み合わせることもできます。
-
-<example file='SuCard/props/text' />
+- [Sheet](/components/SuSheet)

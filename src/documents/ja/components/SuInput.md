@@ -8,56 +8,26 @@
 
 `su-input`には、**prepend**、**append**、メッセージ、およびデフォルトのスロットがあります。
 
-<example file='SuInput/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Error
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|append-icon|string|undefined|入力フィールドの後方にアイコンを追加します。|
+|color|string|'primary'||
+|hide-details|boolean|false|コンポーネントがアクティブ時のアイコンを設定します。|
+|hint|string|undefined|ヒントを追加します。 これは、入力フィールドの使用方法をユーザーに伝えるのに役立ちます。|
+|id|string|undefined|コンポーネントのDOM IDを指定します。|
+|label|string|undefined|ラベルを設定します。|
+|prepend-icon|string|undefined|入力フィールドの前方にアイコンを追加します。|
 
-**error**プロパティは、現在のステータスをエラー状態に設定します。
+##### Mixins
 
-<example file='SuInput/props/error' />
+このコンポーネントには、以下の共通プロパティがあります。
 
-###### ErrorCount
-
-**error-count**プロパティを使用して、**rules**プロパティで累積されたメッセージの表示数を指定できます。初期値は「1」です。
-
-<example file='SuInput/props/errorCount' />
-
-###### ErrorMessages
-
-**error-messages**プロパティは、現在のステータスがエラー状態の場合に表示するメッセージを指定します。
-
-<example file='SuInput/props/errorMessages' />
-
-###### HideDetails
-
-**hide-details**プロパティを指定すると、メッセージが非表示になります。
-
-<example file='SuInput/props/hideDetails' />
-
-###### Hint
-
-**hint**プロパティを使用してヒントを追加できます。 これは、入力フィールドの使用方法をユーザーに伝えるのに役立ちます。
-
-<example file='SuInput/props/hint' />
-
-###### Icon
-
-**prepend-icon**、**append-icon**プロパティを使用して、入力フィールドにアイコンを配置します。
-
-<example file='SuInput/props/icon' />
-
-###### Messages
-
-**messages**プロパティを使用すると、常に表示されるメッセージを指定できます。 メッセージを配列として渡すことにより、メッセージを複数行にすることができます。
-
-<example file='SuInput/props/messages' />
-
-###### Rules
-
-**rules**プロパティを使用することで、カスタムのバリデーションルールを設定できます。このルールは、`true`またはエラーメッセージを返す関数を追加します。
-
-<example file='SuInput/props/rules' />
+- [Colorable](/internals/mixins#Colorable)
+- [Themeable](/internals/mixins#Themeable)
+- [Validatable](/internals/mixins#Validatable)

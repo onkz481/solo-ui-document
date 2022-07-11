@@ -8,26 +8,22 @@
 
 `su-sheet`コンポーネントは、他のコンポーネントの基礎となる変形可能な要素です。
 
-<example file='SuSheet/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Color
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|outlined|boolean|false|枠線を追加します。|
 
-**color**プロパティを使用すると、カスタムの[マテリアルデザインカラー]()値、またはrgb/16進数の値で色を設定できます。
+##### Mixins
 
-<example file='SuSheet/props/color' />
+このコンポーネントには、以下の共通プロパティがあります。
 
-###### Elevation
-
-**elevation**プロパティを使用すると、0から24までの高さ（影）を指定できます。
-
-<example file='SuSheet/props/elevation' />
-
-###### Rounded
-
-**rounded**プロパティを使用すると、カスタムの丸め値を指定できます。
-
-<example file='SuSheet/props/rounded' />
+- [Colorable](/internals/mixins#Colorable)
+- [Dimensionable](/internals/mixins#Dimensionable)
+- [Elevatable](/internals/mixins#Elevatable)
+- [Roundable](/internals/mixins#Roundable)
+- [Themeable](/internals/mixins#Themeable)

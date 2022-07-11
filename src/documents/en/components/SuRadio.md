@@ -2,26 +2,26 @@
 
 The `su-radio` component provides the function as a simple radio button.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-`su-radio` can be used in combination with `su-radio-group`. You can use the **v-model** of `su-radio-group` to access the selected radio buttons in the group.
+<sample />
 
-<example file='SuRadio/uses' />
-
-#### Sample
+#### Options
 
 ##### Props
 
-###### Row
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| active-class | string |'su-item--active' | Sets the class name applied when the component is active. |
+| color | string |'primary' ||
+| label | string | undefined | Sets the label that appears next to the icon. |
+| off-icon | string |'mdi-radiobox-blank' | Set the inactive icon. |
+| on-icon | string |'mdi-radiobox-marked' | Set the active icon. |
 
-You can use the **row** or **column** properties to control the orientation of the radio group. The default value is **column**.
+##### Mixins
 
-<example file='SuRadio/props/row' />
+This component has the following common properties:
 
-###### Icon
-
-You can customize the radio button icon using the **on-icon** and **off-icon**.
-
-<example file='SuRadio/props/icon' />
+- [Colorable](/internals/mixins#Colorable)

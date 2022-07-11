@@ -6,24 +6,24 @@
 
 #### 使い方
 
-全てのアイテムは `su-tab`コンポーネントでラッピングされる必要があります。
+<sample />
 
-<example file='SuTabs/uses1' />
+#### Options
 
-`su-tabs-items`コンポーネントを使用して、選択したタブに対応するコンテンツを表示できます。
+##### Props
 
-<example file='SuTabs/uses2' />
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|active-class|string|'su-tab--active'|コンポーネントがアクティブ時に適用されるクラス名を設定します。|
+|color|string|'primary'|指定された色をコンポーネントに適用します。|
+|hide-slider|boolean|false|スライダーを非表示にします。|
+|shrink|boolean|false|`su-tab`の幅を縮小します。|
+|slider-color|string|'primary'|スライダーの色を設定します。|
+|slider-size|number|2|スライダーの高さを設定します。|
 
-#### サンプル
+##### Mixins
 
-##### プロパティ
+このコンポーネントには、以下の共通プロパティがあります。
 
-###### Shrink
-
-**shrink**を指定すると、`su-tab`の幅を縮小します。
-
-<example file='SuTabs/props/shrink1' />
-
-**rounded prop**と組み合わせることもできます。
-
-<example file='SuTabs/props/shrink2' />
+- [Colorable](/internals/mixins#Colorable)
+- [Roundable](/internals/mixins#Roundable)

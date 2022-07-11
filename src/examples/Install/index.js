@@ -3,7 +3,7 @@ import install2 from './install2.txt'
 import install3 from './install3.txt'
 import install4 from './install4.txt'
 
-export default {
+export {
   install1,
   install2,
   install3,

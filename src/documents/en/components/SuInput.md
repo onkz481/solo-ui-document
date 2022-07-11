@@ -1,63 +1,33 @@
 ### Input
 
-`su-input` provides the basic components of a user-customizable input field. It is used as the basis for some components such as `su-text-field` and `su-textarea`.
+`su-input` provides the basic components of a user-customizable input field. It is used as the basis for some components such as `su-text-field` and` su-textarea`.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-`su-input` has **prepend**, **append**, messages, and default slots.
+`su-input` has **prepare**, **append**, messages, and default slots.
 
-<example file='SuInput/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### Error
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| append-icon | string | undefined | Adds an icon after the input field. |
+| color | string |'primary' ||
+| hide-details | boolean | false | Sets the icon when the component is active. |
+| hint | string | undefined | Add a hint. This helps tell the user how to use the input field. |
+| id | string | undefined | Specifies the DOM ID of the component. |
+| label | string | undefined | Set the label. |
+| prepare-icon | string | undefined | Adds an icon in front of the input field. |
 
-The **error** property sets the current status to error status.
+##### Mixins
 
-<example file='SuInput/props/error' />
+This component has the following common properties:
 
-###### ErrorCount
-
-You can use the **error-count** property to specify the number of messages that have been accumulated in the **rules** property. The initial value is "1".
-
-<example file='SuInput/props/errorCount' />
-
-###### ErrorMessages
-
-The **error-messages** property specifies the messages to display if the current status is error status.
-
-<example file='SuInput/props/errorMessages' />
-
-###### HideDetails
-
-Specifying the **hide-details** property hides the message.
-
-<example file='SuInput/props/hideDetails' />
-
-###### Hint
-
-You can add hints by using the **hint** property. This is useful for telling the user how to use the input field.
-
-<example file='SuInput/props/hint' />
-
-###### Icon
-
-Use the **prepend-icon** and **append-icon** properties to place the icon in the input field.
-
-<example file='SuInput/props/icon' />
-
-###### Messages
-
-The **messages** property allows you to specify the messages that are always displayed. You can make the message multiple lines by passing it as an array.
-
-<example file='SuInput/props/messages' />
-
-###### Rules
-
-You can set custom validation rules by using the **rules** property. The rule adds a function that returns a `true` or error message.
-
-<example file='SuInput/props/rules' />
+- [Colorable](/internals/mixins#Colorable)
+- [Themeable](/internals/mixins#Themeable)
+- [Validatable](/internals/mixins#Validatable)

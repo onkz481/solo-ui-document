@@ -30,6 +30,34 @@ export function extractWithWord(source, start, end, inword = false){
   return text.slice(0, inword ? endIndex + end.length : endIndex)
 }
 
+export function multiExtractWithWord(source, start, end, inword = false){
+  if( !source || !start || !end ) return
+
+  const result = []
+
+  const indexs = []
+  const regex = RegExp(`${start}`, 'g')
+
+  /* eslint-disable */
+  let reg
+  while (reg = regex.exec(source)) {
+    indexs.push(reg.index)
+  }
+
+  let startIndex, endIndex
+  indexs.forEach(index => {
+    startIndex = inword ? index : index + start.length,
+    endIndex = inword ? source.indexOf(end, index) + end.length : source.indexOf(end, index)
+
+    result.push({
+      startIndex, endIndex,
+      text: source.slice(startIndex, endIndex)
+    })
+  })
+
+  return result
+}
+
 export function genExtractWithChar(source, start = '{', end = '}'){
   if( !source ) return
 

@@ -1,51 +1,51 @@
 ### Grid layout
 
-Provides a grid layout using **flex-box**.
+**flex-box**を使用したグリッドレイアウトを提供します。
 
 <su-divider class="mb-8" />
 
-#### How to Use
+#### 使い方
 
-The SoloUI grid layout mainly consists of `su-container` `su-row` `su-col` components.
+SoloUIグリッドレイアウトは、主に`su-container`、`su-row`、`su-col`コンポーネントで構成されています。
 
 <example file='SuGrid/uses1' />
 
-You can use the `su-spacer` component to distribute the remaining width between parent and child components. For example, you can place a `su-spacer` before or after a child component to move the child component to the left or right.
+`su-spacer`コンポーネントを使用して、残りの幅を親コンポーネントと子コンポーネントの間で分散させることができます。 たとえば、子コンポーネントの前後に`su-spacer`を配置して、子コンポーネントを左または右に移動できます。
 
 <example file='SuGrid/uses2' />
 
-#### Components
+#### コンポーネント
 
 ##### SuContainer
 
-`su-container` provides the ability to center the content.
+`su-container`は、コンテンツを中央に配置する機能を提供します。
 
 ##### SuRow
 
-`su-row` is a wrapper component for `su-col`. This controls the layout of the columns inside.
+`su-row`は、`su-col`のラッパーコンポーネントです。これは、内部の列のレイアウトを制御します。
 
 ##### SuCol
 
-`su-col` is the element that holds the content of the layout consisting of flex-box. Must be a child element of `su-row`.
+`su-col`は、flex-boxで構成されるレイアウトのコンテンツを保持する要素です。`su-row`の子要素である必要があります。
 
-#### Sample
+#### サンプル
 
-##### Props
+##### プロパティ
 
 ###### Align
 
-You can change the vertical alignment by using the **align** or **align-self** properties.
+**align**または**align-self**プロパティを使用して、垂直方向の配置を変更できます。
 
 <example file='SuGrid/props/align' />
 
 ###### Justify
 
-You can change the horizontal alignment using the **justify** property.
+**justify**プロパティを使用して、水平方向の配置を変更できます。
 
 <example file='SuGrid/props/justify' />
 
 ###### NoGutters
 
-You can use the **no-gutters** property to remove the padding from the `su-col` component of the child element.
+**no-gutters**プロパティを使用して、子要素の`su-col`コンポーネントからパディングを削除できます。
 
 <example file='SuGrid/props/noGutters' />

@@ -2,20 +2,19 @@
 
 The `su-overlay` component can be used to emphasize specific elements or content.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-If no properties or default slots are specified, the component will display a translucent layer in the application.
+If no property or default slot is specified, the component will display a translucent layer in the application.
 
-<example file='SuOverlay/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### Absolute
-
-If you specify the **absolute** property, the layer will be displayed inside the parent element.
-
-<example file='SuOverlay/props/absolute' />
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| absolute | boolean | false | Displays the overlay inside the parent element. |
+| value | boolean | true | Shows / hides the overlay. |

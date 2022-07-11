@@ -8,26 +8,25 @@
 
 これは、**activator**と**default**スロットで構成されています。トリガー要素を**activator**スロットに配置します。
 
-<example file='SuMenu/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### OffsetX
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|bottom|boolean|false|メニューをトリガー要素の下部に配置します。|
+|close-on-content-click|boolean|true|コンテンツがクリックされたときにメニューを閉じるかどうかを指定します。|
+|left|boolean|false|メニューをトリガー要素の左に配置します。|
+|offset-x|boolean|false|メニューをX軸でオフセットします。|
+|offset-y|boolean|false|メニューをY軸でオフセットします。|
+|right|boolean|false|メニューをトリガー要素の右に配置します。|
+|top|boolean|false|メニューをトリガー要素の上部に配置します。|
 
-メニューをX軸でオフセットします。**left**、**right**プロパティを使用して、オフセット方向を指定できます。
+##### Mixins
 
-<example file='SuMenu/props/offsetX' />
+このコンポーネントには、以下の共通プロパティがあります。
 
-###### OffsetY
-
-メニューをY軸でオフセットします。**top**、**bottom**プロパティを使用して、オフセット方向を指定できます。
-
-<example file='SuMenu/props/offsetY' />
-
-###### CloseOnContentClick
-
-**close-on-content-click**プロパティは、コンテンツがクリックされたときにメニューを閉じるかどうかを指定します。デフォルト値は`true`です。
-
-<example file='SuMenu/props/closeOnContentClick' />
+- [Elevatable](/internals/mixins#Elevatable)
+- [Transitionable](/internals/mixins#Transitionable)

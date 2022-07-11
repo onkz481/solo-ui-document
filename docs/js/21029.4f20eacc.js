@@ -1,2 +1,0 @@
-(self["webpackChunk_onkz481_solo_ui_document"]=self["webpackChunk_onkz481_solo_ui_document"]||[]).push([[21029],{21029:function(){(function(e){var a=e.util.clone(e.languages.typescript);e.languages.tsx=e.languages.extend("jsx",a),delete e.languages.tsx["parameter"],delete e.languages.tsx["literal-property"];var t=e.languages.tsx.tag;t.pattern=RegExp(/(^|[^\w$]|(?=<\/))/.source+"(?:"+t.pattern.source+")",t.pattern.flags),t.lookbehind=!0})(Prism)}}]);
-//# sourceMappingURL=21029.4f20eacc.js.map

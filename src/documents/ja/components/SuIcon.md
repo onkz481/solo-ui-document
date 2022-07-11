@@ -8,14 +8,22 @@
 
 `su-icon`コンポーネントのデフォルトスロットは、アイコン名を記述します。
 
-<example file='SuIcon/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Color
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|disabled|boolean|false|アイコンを無効にします。|
+|large|boolean|false|コンポーネントの **Width**、**Height** を「32px」に設定します。|
+|small|boolean|false|コンポーネントの **Width**、**Height** を「16px」に設定します。|
+|src|string|undefined|イメージファイルのURLを設定することもできます。|
 
-**color**を指定すると、テーマの色または任意の色でコンポーネントに色を付けることができます。
+##### Mixins
 
-<example file='SuIcon/props/color' />
+このコンポーネントには、以下の共通プロパティがあります。
+
+- [Colorable](/internals/mixins#Colorable)
+- [Themeable](/internals/mixins#Themeable)

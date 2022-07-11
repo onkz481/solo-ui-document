@@ -2,32 +2,28 @@
 
 The `su-sheet` component forms the concept of "Surface" in Material Design.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-The `su-sheet` component is a deformable element that is the basis of other components.
+The `su-sheet` component is the deformable element that underlies other components.
 
-<example file='SuSheet/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### Color
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| outlined | boolean | false | Add a border. |
 
-The **color** property allows you to set the color with a custom <r-link to="/">Material Design Color</r-link> value or an rgb / hexadecimal value.
+##### Mixins
 
-<example file='SuSheet/props/color' />
+This component has the following common properties:
 
-###### Elevation
-
-The **elevation** property allows you to specify the height (shadow) from 0 to 24.
-
-<example file='SuSheet/props/elevation' />
-
-###### Rounded
-
-The **rounded** property allows you to specify a custom rounding value.
-
-<example file='SuSheet/props/rounded' />
+- [Colorable](/internals/mixins#Colorable)
+- [Dimensionable](/internals/mixins#Dimensionable)
+- [Elevatable](/internals/mixins#Elevatable)
+- [Roundable](/internals/mixins#Roundable)
+- [Themeable](/internals/mixins#Themeable)

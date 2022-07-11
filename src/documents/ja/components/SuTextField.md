@@ -1,41 +1,44 @@
 ### TextField
 
-`su-text-field`コンポーネントは、ユーザーが編集可能なテキスト入力フォームを提供します。また、内部で`su-input`コンポーネントを使用しているため、<r-link to="components/SuInput">SuInput</r-link>ドキュメントのプロパティを使用できます。
+`su-text-field`コンポーネントは、ユーザーが編集可能なテキスト入力フォームを提供します。
 
 <su-divider class="mb-8" />
 
 #### 使い方
 
-**label**プロパティは、入力フィールドの役割をユーザーに説明するための良い方法です。
+<sample />
 
-<example file='SuTextField/uses' />
+#### Options
 
-#### サンプル
+##### Props
 
-##### プロパティ
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|append-inner-icon|string|undefined|入力フィールドの後方内側に表示されるアイコンを設定します。|
+|clearable|boolean|false|すべての入力値を削除するボタンを追加します。|
+|clear-icon|string|'mdi-close'|**clearable** が有効時に表示されるアイコンを設定します。|
+|prepend-inner-icon|string|undefined|入力フィールドの前方内側に表示されるアイコンを設定します。|
+|rounded|string|'normal'|コンポーネントに **border-radius** を追加します。|
 
-###### Clearable
+##### Extends
 
-**clearable**が指定されている場合、すべての入力値を削除するボタンが追加されます。
+このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-<example file='SuTextField/props/clearable' />
+- [Input](/components/SuInput)
 
-###### Icon
+##### Mixins
 
-**prepend-icon**、**append-icon**、**prepend-inner-icon**、および**append-inner-icon**プロパティを使用して、入力フィールドの外側と内側にアイコンを配置できます。
+このコンポーネントには、以下の共通プロパティがあります。
 
-<example file='SuTextField/props/icon' />
+- [Roundable](/internals/mixins#Roundable)
 
-###### Label
-
-**label**プロパティを使用して、入力フィールドにラベルを追加できます。
-
-<example file='SuTextField/props/label' />
-
-##### イベント
-
-###### Icon
-
-`click:prepend-inner`、`click:append-inner`、`click:prepend-outer`、`click:append-outer`を使用して、各アイコンのクリックイベントを設定できます。
+#### Events
 
 <example file='SuTextField/events/icon' />
+
+|Name|Description|
+|----|----|
+|click:append|`append-icon`で設定されたアイコンにイベントを追加します。|
+|click:append-inner|`append-inner-icon`で設定されたアイコンにイベントを追加します。|
+|click:prepend|`prepend-icon`で設定されたアイコンにイベントを追加します。|
+|click:prepend-inner|`prepend-inner-icon`で設定されたアイコンにイベントを追加します。|

@@ -8,14 +8,18 @@
 
 単純な`su-divider`コンポーネントは、要素内に水平線を表示します。
 
-<example file='SuDivider/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Vertical
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|vertical|boolean|false|水平線を縦方向に変更します。|
 
-**vertical**プロパティを指定すると、縦線に変更できます。
+##### Mixins
 
-<example file='SuDivider/props/vertical' />
+このコンポーネントには、以下の共通プロパティがあります。
+
+- [Themeable](/internals/mixins#Themeable)

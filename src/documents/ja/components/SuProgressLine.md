@@ -1,4 +1,4 @@
-### Progress
+### ProgressLine
 
 `su-progress-line`コンポーネントは、処理の進捗状況をユーザに視覚的に伝えることのできる、水平方向のプログレスバーです。
 

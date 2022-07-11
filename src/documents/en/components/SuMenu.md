@@ -1,33 +1,32 @@
 ### Menu
 
-The `su-menu` component displays a menu at the specified element position.
+The `su-menu` component displays the menu at the specified element position.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
 It consists of **activator** and **default** slots. Place the trigger element in the **activator** slot.
 
-<example file='SuMenu/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### OffsetX
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| bottom | boolean | false | Places the menu at the bottom of the trigger element. |
+| close-on-content-click | boolean | true | Specifies whether to close the menu when the content is clicked. |
+| left | boolean | false | Places the menu to the left of the trigger element. |
+| offset-x | boolean | false | Offsets the menu on the X-axis. |
+| offset-y | boolean | false | Offsets the menu on the Y axis. |
+| right | boolean | false | Places the menu to the right of the trigger element. |
+| top | boolean | false | Places the menu at the top of the trigger element. |
 
-Offset the menu on the X axis. You can specify the offset direction using the **left** and **right** properties.
+##### Mixins
 
-<example file='SuMenu/props/offsetX' />
+This component has the following common properties:
 
-###### OffsetY
-
-Offset the menu on the Y axis. You can specify the offset direction using the **top** and **bottom** properties.
-
-<example file='SuMenu/props/offsetY' />
-
-###### CloseOnContentClick
-
-The **close-on-content-click** property specifies whether to close the menu when the content is clicked. The default value is **true**.
-
-<example file='SuMenu/props/closeOnContentClick' />
+- [Elevatable](/internals/mixins#Elevatable)
+- [Transitionable](/internals/mixins#Transitionable)

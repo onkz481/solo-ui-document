@@ -6,22 +6,19 @@
 
 #### 使い方
 
-現在のステータスは、**v-model**ディレクティブを使用して取得できます。
+<sample />
 
-単一の`su-checkbox`の値はブール値です。
+#### Options
 
-<example file='SuCheckbox/uses1' />
+##### Props
 
-複数の`su-checkbox`を使用している場合、配列を使用して**v-model**を共有できます。
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|offIcon|string|'mdi-checkbox-blank-outline'|コンポーネントが非アクティブ時のアイコンを設定します。|
+|onIcon|string|'mdi-checkbox-outline'|コンポーネントがアクティブ時のアイコンを設定します。|
 
-<example file='SuCheckbox/uses2' />
+##### Extends
 
-#### サンプル
+このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-##### プロパティ
-
-###### Icon
-
-**on-icon**および**off-icon**を使用して、チェックボックスアイコンをカスタマイズできます。
-
-<example file='SuCheckbox/props/icon' />
+- [Input](/components/SuInput)

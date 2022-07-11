@@ -8,42 +8,33 @@
 
 **items**、**to**、**total** プロパティは、`su-data-list` コンポーネントが正しく機能するために必要です。
 
-<example file='SuDataList/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Loading
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|items|array|[]|表示されるアイテムの配列オブジェクトを指定します。|
+|to|number|0|表示するアイテムの番号を設定します。|
+|total|number|1|**items** で指定された配列の総数を設定します。|
+|loading|boolean|false|処理が進行中であることをユーザに伝えます。|
+|emptyText|string|undefined|**items** が空の場合に表示するテキストを設定します。|
+|mostBottomText|string|undefined|データが最後まで表示されたことを示すテキストを設定します。|
 
-**loading prop**は、処理が進行中であることをユーザーに知らせます。
+##### Slots
 
-<example file='SuDataList/props/loading' />
+<example file='SuDataList/slots/defaultSlot' />
 
-###### EmptyText
+|Name|Props|Description|
+|----|----|-------|
+|default|\{ item \}|リストをカスタマイズすることができます。スロットプロパティを使用して、**items prop**で渡されたアイテムにアクセスできます。|
 
-**emptyText prop**は、**items prop**が空の場合に表示するテキストを指定します。
-
-<example file='SuDataList/props/emptyText' />
-
-###### MostBottomText
-
-**mostBottomText prop**は、データが最後まで表示されたことを示すテキストを指定します。
-
-<example file='SuDataList/props/mostBottomText' />
-
-##### イベント
-
-###### More
-
-**more event**は、未取得のデータがある場合に表示される `su-btn`コンポーネントをクリックすると発生します。
+##### Events
 
 <example file='SuDataList/events/more' />
 
-##### スロット
-
-###### DefaultSlot
-
-**default slot**は、リストをカスタマイズすることができます。スロットプロパティを使用して、**items prop**で渡されたアイテムにアクセスできます。
-
-<example file='SuDataList/slots/defaultSlot' />
+|Name|Description|
+|----|----|
+|more|未取得のデータがある場合に表示される `su-btn`コンポーネントをクリックすると発生します。|

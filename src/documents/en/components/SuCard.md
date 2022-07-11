@@ -4,30 +4,22 @@ The `su-card` component is a versatile component that can wrap multiple contents
 
 <su-divider class="mb-8" />
 
-#### How to Use
+#### How to use
 
-`su-card-title`, `su-card-subtitle`, `su-card-content`, `su-card-actions` >> A basic subcomponent of **su-card**.
+`su-card-title`,`su-card-subtitle`, `su-card-content`, and`su-card-actions` are the basic subcomponents of ** su-card **.
 
-<example file='SuCard/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### Color
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| rounded | string |'normal' ||
 
-**color** allows you to color the component with the theme color or any color you like.
+##### Extends
 
-<example file='SuCard/props/color' />
+This component has been extended by the following components: This inherits the options used by the source component.
 
-###### Outlined
-
-Specifying **outlined** adds a border with the default color or the color specified by **color prop** and makes the background transparent.
-
-<example file='SuCard/props/outlined' />
-
-###### Text
-
-If you specify **text**, the color specified by **color prop** will be applied to the text on the card. It can also be combined with **outlined prop**.
-
-<example file='SuCard/props/text' />
+- [Sheet](/components/SuSheet)

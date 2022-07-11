@@ -6,28 +6,16 @@
 
 #### 使い方
 
-`su-item-group`は、子コンポーネントに `su-item`を使用して、選択したアイテムを監視できます。
+`su-item-group`は、子コンポーネントに `su-item` を使用して、選択したアイテムを監視できます。
 
-<example file='SuItemGroup/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### ActiveClass
-
-**active-class**プロパティを使用すると、アクティブなアイテムに適用されるCSSクラスを指定できます。
-
-<example file='SuItemGroup/props/activeClass' />
-
-###### Multiple
-
-**multiple**プロパティを使用すると、複数のアイテムを選択できます。
-
-<example file='SuItemGroup/props/multiple' />
-
-###### Mandatory
-
-**mandatory**プロパティを使用すると、アイテムの選択を強制します。
-
-<example file='SuItemGroup/props/mandatory' />
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|active-class|string|'su-item--active'|アクティブなアイテムに適用されるCSSクラスを設定します。|
+|mandatory|boolean|false|アイテムの選択を強制します。|
+|multiple|boolean|false|複数アイテムの選択を許可します。|

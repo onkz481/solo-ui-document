@@ -2,48 +2,39 @@
 
 The `su-data-list` component provides the ability to split and display multiple pieces of information.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-The **items**, **to**, and **total** properties are required for the `su-data-list` component to function properly.
+The **items**, **to**, **total** properties are required for the `su-data-list` component to function properly.
 
-<example file='SuDataList/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### Loading
-
-**loading prop** informs the user that processing is in progress.
-
-<example file='SuDataList/props/loading' />
-
-###### EmptyText
-
-**emptyText prop** specifies the text to display if **items prop** is empty.
-
-<example file='SuDataList/props/emptyText' />
-
-###### MostBottomText
-
-**mostBottomText prop** specifies the text that indicates that the data has been displayed to the end.
-
-<example file='SuDataList/props/mostBottomText' />
-
-##### Events
-
-###### More
-
-The **more event** occurs when you click on the `su-btn` component that is displayed when there is unacquired data.
-
-<example file='SuDataList/events/more' />
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| items | array | [] | Specifies the array object for the displayed items. |
+| to | number | 0 | Set the number of the item to be displayed. |
+| total | number | 1 | **Sets the total number of arrays specified by items**. |
+| loading | boolean | false | Tells the user that processing is in progress. |
+| emptyText | string | undefined | **Set the text to display when items** is empty. |
+| mostBottomText | string | undefined | Sets the text that indicates that the data has been displayed to the end. |
 
 ##### Slots
 
-###### DefaultSlot
+<example file ='SuDataList / slots / defaultSlot' />
 
-The **default slot** allows you to customize the list. You can use the slot properties to access the items passed in **items prop**.
+| Name | Props | Description |
+| ---- | ---- | ------- |
+| default | \{ item \} | You can customize the list. You can use the slot properties to access the items passed in **items prop**. |
 
-<example file='SuDataList/slots/defaultSlot' />
+##### Events
+
+<example file ='SuDataList/events/more' />
+
+| Name | Description |
+| ---- | ---- |
+| more | Occurs when clicking the `su-btn` component that appears when there is unacquired data. |

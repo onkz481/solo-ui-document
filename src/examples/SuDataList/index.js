@@ -3,7 +3,7 @@ import props from './props'
 import events from './events'
 import slots from './slots'
 
-export default {
+export {
   uses,
   props,
   events,

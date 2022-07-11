@@ -6,22 +6,22 @@
 
 #### 使い方
 
-`su-radio`は、`su-radio-group`と組み合わせて使用できます。`su-radio-group`の**v-model**を使用して、グループ内の選択したラジオボタンにアクセスできます。
+<sample />
 
-<example file='SuRadio/uses' />
+#### Options
 
-#### サンプル
+##### Props
 
-##### プロパティ
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|active-class|string|'su-item--active'|コンポーネントがアクティブ時に適用されるクラス名を設定します。|
+|color|string|'primary'||
+|label|string|undefined|アイコンの横に表示されるラベルを設定します。|
+|off-icon|string|'mdi-radiobox-blank'|非アクティブ時のアイコンを設定します。|
+|on-icon|string|'mdi-radiobox-marked'|アクティブ時のアイコンを設定します。|
 
-###### Row
+##### Mixins
 
-**row**または**column**プロパティを使用して、ラジオグループの方向を制御できます。デフォルト値は**column**です。
+このコンポーネントには、以下の共通プロパティがあります。
 
-<example file='SuRadio/props/row' />
-
-###### Icon
-
-**on-icon**および**off-icon**を使用して、ラジオボタンのアイコンをカスタマイズできます。
-
-<example file='SuRadio/props/icon' />
+- [Colorable](/internals/mixins#Colorable)

@@ -1,29 +1,29 @@
 ### Tabs
 
-The `su-tabs` component can be used as a navigation to toggle the contents of the display area.
+The `su-tabs` component can be used as a navigation to switch the contents of the display area.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-All items must be wrapped in the `su-tab` component.
+<sample />
 
-<example file='SuTabs/uses1' />
-
-You can use the `su-tabs-items` component to display the content that corresponds to the selected tab.
-
-<example file='SuTabs/uses2' />
-
-#### Sample
+#### Options
 
 ##### Props
 
-###### Shrink
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| active-class | string |'su-tab--active' | Sets the class name applied when the component is active. |
+| color | string |'primary' | Applies the specified color to the component. |
+| hide-slider | boolean | false | Hides the slider. |
+| shrink | boolean | false | Reduces the width of `su-tab`. |
+| slider-color | string |'primary' | Sets the color of the slider. |
+| slider-size | number | 2 | Sets the height of the slider. |
 
-Specifying **shrink** reduces the width of `su-tab`.
+##### Mixins
 
-<example file='SuTabs/props/shrink1' />
+This component has the following common properties:
 
-It can also be combined with **rounded prop**.
-
-<example file='SuTabs/props/shrink2' />
+- [Colorable](/internals/mixins#Colorable)
+- [Roundable](/internals/mixins#Roundable)

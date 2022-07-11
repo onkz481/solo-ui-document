@@ -4,24 +4,21 @@ The `su-checkbox` component provides the user with the ability to choose between
 
 <su-divider class="mb-8" />
 
-#### How to Use
+#### Usage
 
-The current status can be obtained using the **v-model** directive.
+<sample />
 
-A single `su-checkbox` value is a Boolean value.
-
-<example file='SuCheckbox/uses1' />
-
-If you are using multiple `su-checkbox`, you can use an array to share the **v-model**.
-
-<example file='SuCheckbox/uses2' />
-
-#### Sample
+#### Options
 
 ##### Props
 
-###### Icon
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|offIcon|string|'mdi-checkbox-blank-outline'|Set icon when component is inactive. |
+|onIcon|string|'mdi-checkbox-blank-blank-outline'|Set the icon when the component is active. |
 
-You can customize the checkbox icon using the **on-icon** and **off-icon**.
+##### Extends
 
-<example file='SuCheckbox/props/icon' />
+This component is extended by the following components. This inherits the options used in the source component.
+
+- [Input](/components/SuInput)

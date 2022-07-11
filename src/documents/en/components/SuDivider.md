@@ -2,20 +2,24 @@
 
 The `su-divider` component is used to visually divide the layout.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-A simple `su-divider` component displays a horizontal line inside the element.
+A simple `su-divider` component displays a horizontal line within an element.
 
-<example file='SuDivider/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### Vertical
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| vertical | boolean | false | Change the horizontal line vertically. |
 
-You can change it to a vertical line by specifying the **vertical** property.
+##### Mixins
 
-<example file='SuDivider/props/vertical' />
+This component has the following common properties:
+
+- [Themeable](/internals/mixins#Themeable)

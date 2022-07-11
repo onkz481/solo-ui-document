@@ -8,22 +8,18 @@
 
 バナーには、目立つメッセージと関連するオプションのアクションが表示されます。
 
-<example file='SuBanner/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### SingleLine
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|single-line|boolean|false|1行より長いメッセージを省略します。|
 
-**singleLine**プロパティを指定すると、1行より長いメッセージが省略されます。
+##### Extends
 
-<example file='SuBanner/props/singleLine' />
+このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-##### スロット
-
-###### ActionClose
-
-**action**スロットの**close**スロットプロパティを使用して、いつでもバナーを閉じることができます。
-
-<example file='SuBanner/slots/actionClose' />
+- [Sheet](/components/SuSheet)

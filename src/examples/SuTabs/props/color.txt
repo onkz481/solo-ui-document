@@ -1,0 +1,16 @@
+<template>
+  <su-row
+    justify="center"
+  >
+    <su-tabs
+      color="indigo"
+    >
+      <su-tab
+        v-for="n in 3"
+        :key="n"
+      >
+        {{ `Item ${n}` }}
+      </su-tab>
+    </su-tabs>
+  </su-row>
+</template>

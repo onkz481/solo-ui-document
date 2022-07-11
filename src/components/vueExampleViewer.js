@@ -2,10 +2,11 @@ import Vue from 'vue'
 
 // components
 import { 
-  SuSheet, SuCard, SuCardContent, SuCode, SuAppbar, SuSpacer, SuBtn, SuIcon, 
+  SuSheet, SuCard, SuCardContent, SuAppbar, SuSpacer, SuBtn, SuIcon, 
   SuExpandTransition, SuDivider, SuTabs, SuTab, SuTabsItems, SuTabItem } from '@onkz481/solo-ui'
+import { CodeViewer } from './tools'
 
-import examples from '../examples'
+import * as examples from '../examples'
 
 // helpers
 import { genExtractWithChar, extractWithWord } from '../util/helpers'
@@ -128,7 +129,7 @@ export default Vue.extend({
           value: this.tab
         }
       }, Object.keys(this.codes).map(key => {
-        const code = this.$createElement(SuCode, {
+        const code = this.$createElement(CodeViewer, {
           props: {
             lang: this.getCodeLang(key),
             code: this.codes[key]

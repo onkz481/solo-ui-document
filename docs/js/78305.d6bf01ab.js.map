@@ -1,1 +1,0 @@
-{"version":3,"file":"js/78305.d6bf01ab.js","mappings":"kIAAAA,MAAMC,UAAU,SAASD,MAAMC,UAAU,iBAAiBC,SAAS","sources":["webpack://@onkz481/solo-ui-document/./node_modules/prismjs/components/prism-t4-vb.min.js"],"sourcesContent":["Prism.languages[\"t4-vb\"]=Prism.languages[\"t4-templating\"].createT4(\"vbnet\");"],"names":["Prism","languages","createT4"],"sourceRoot":""}

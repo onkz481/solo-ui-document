@@ -8,38 +8,30 @@
 
 最も単純なボタンには、大文字のテキストとホバー効果が含まれます。
 
-<example file='SuBtn/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Color
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|disabled|boolean|false|ボタンを無効にします。|
+|icon|boolean|false|ボタンが丸いデザインになります。|
+|large|boolean|false|コンポーネントの **Width**、**Height** を「28px」に設定します。|
+|loading|boolean|false|処理が進行中であることをユーザに知らせます。|
+|outlined|boolean|false|デフォルトの色、もしくはcolor propで指定された色の境界線が追加され、背景が透明になり、影が削除されます。|
+|rounded|string|'normal'||
+|small|boolean|false|コンポーネントの **Width**、**Height** を「44px」に設定します。|
+|tag|string|'button'||
+|text|boolean|false|背景を削除して、文字に色を適用します。|
 
-**color**を指定すると、テーマの色または任意の色でコンポーネントに色を付けることができます。
+##### Mixins
 
-<example file='SuBtn/props/color' />
+このコンポーネントには、以下の共通プロパティがあります。
 
-###### Outlined
-
-**outlined**を指定すると、デフォルトの色、もしくはcolor propで指定された色の境界線が追加され、背景が透明になり、影が削除されます。
-
-<example file='SuBtn/props/outlined' />
-
-###### Text
-
-**text**を指定すると、背景のないボタンを実装できます。**color prop**と一緒に使用すると、指定した色がボタンのテキストに適用されます。
-
-<example file='SuBtn/props/text' />
-
-###### Loading
-
-**loading prop**は、処理が進行中であることをユーザーへ知らせるのに最適です。
-
-<example file='SuBtn/props/loading' />
-
-###### Icon
-
-**icon prop**を指定すると、ボタンが丸いデザインになります。
-
-<example file='SuBtn/props/icon' />
+- [Colorable](/internals/mixins#Colorable)
+- [Dimensionable](/internals/mixins#Dimensionable)
+- [Elevatable](/internals/mixins#Elevatable)
+- [Roundable](/internals/mixins#Roundable)
+- [Themeable](/internals/mixins#Themeable)

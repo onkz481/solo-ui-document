@@ -2,32 +2,20 @@
 
 `su-item-group` creates a group of selectable items.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-`su-item-group` can monitor selected items by using `su-item` for its child components.
+`su-item-group` can use` su-item` on its child components to monitor selected items.
 
-<example file='SuItemGroup/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### ActiveClass
-
-The **active-class** property allows you to specify the CSS class that applies to the active item.
-
-<example file='SuItemGroup/props/activeClass' />
-
-###### Multiple
-
-The **multiple** property allows you to select multiple items.
-
-<example file='SuItemGroup/props/multiple' />
-
-###### Mandatory
-
-Use the **mandatory** property to force the selection of items.
-
-<example file='SuItemGroup/props/mandatory' />
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| active-class | string |'su-item--active' | Sets the CSS class applied to the active item. |
+| mandatory | boolean | false | Forces item selection. |
+| multiple | boolean | false | Allows selection of multiple items. |

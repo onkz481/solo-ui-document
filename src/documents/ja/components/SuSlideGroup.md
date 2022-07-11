@@ -8,20 +8,21 @@
 
 `su-slide-group`コンポーネントは、`su-slide-item`コンポーネントを参照して、スクロールに必要な領域を自動的に設定します。ユーザーは、設定された領域を左右に移動できます。
 
-<example file='SuSlideGroup/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Icon
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|active-class|string|'su-slide-item--active'|コンポーネントがアクティブ時に適用されるクラス名を設定します。|
+|next-icon|string|'mdi-chevron-right'|ペジネーションアイコンを設定します。|
+|prev-icon|string|'mdi-chevron-right'|ペジネーションアイコンを設定します。|
+|show-arrows|boolean|false|ペジネーションアイコンの表示・非表示を切り替えます。|
 
-**prev-icon**または**next-icon**プロパティを使用して、独自のページネーションアイコンに変更できます。
+##### Extends
 
-<example file='SuSlideGroup/props/icon' />
+このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-###### ShowArrows
-
-**show-arrows**プロパティを使用して、ページネーションアイコンを表示します。
-
-<example file='SuSlideGroup/props/showArrows' />
+- [ItemGroup](/components/SuItemGroup)

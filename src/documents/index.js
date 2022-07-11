@@ -15,6 +15,7 @@ export default class Docs {
     'utilities',
     'styles',
     'components',
+    'internals'
   ]
 
   latestDoc = {

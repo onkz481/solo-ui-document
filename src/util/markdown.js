@@ -1,5 +1,11 @@
 import Vue from 'vue'
 
+// components
+//import { SuTable } from '@onkz481/solo-ui'
+
+// helpers
+import { multiExtractWithWord } from './helpers'
+
 const md = require('markdown-it')({
   html: true
 })
@@ -55,6 +61,8 @@ function mdHead(md){
       tmpAttrs[i][1] += ` text-${token.tag} mb-4`
     }
 
+    if( tokens[idx + 1].content ) tmpAttrs.push(['id', tokens[idx + 1].content]) // idを追加
+
     token.attrs = tmpAttrs
 
     return render(tokens, idx, options, env, self)
@@ -67,7 +75,7 @@ function mdCode(md){
     let token = tokens[idx],
         content = escapeHtml(token.content)
 
-    return `<su-code class="mb-4" code="${content}" :languages="['${token.info}']" lang="${token.info}" rounded="normal" />`
+    return `<code-viewer class="mb-4" code="${content}" :languages="['${token.info}']" lang="${token.info}" rounded="normal" />`
   }
 }
 
@@ -88,10 +96,12 @@ function mdLink(md){
   }
 }
 
-
 /* functions */
 export function genMarkdownBody(str, components = {}){
-  const mdText = md.render(str)
+  let mdText = md.render(str)
+
+  mdText = genMarkdownText(mdText, multiExtractWithWord(mdText, '<table>', '</table>', true))
+
   const res = Vue.compile(`<div>${mdText}</div>`)
 
   return Vue.component('VueMarkdownBody', {
@@ -99,4 +109,63 @@ export function genMarkdownBody(str, components = {}){
     render: res.render,
     staticRenderFns: res.staticRenderFns
   })
+}
+
+export function genMarkdownText(str, extracts){
+  if( extracts.length <= 0 ) return str
+
+  let forwardText = str.slice(0, extracts[0].startIndex)
+  let backText = str.slice(extracts[extracts.length - 1].endIndex, str.length)
+
+  let intermediateTexts = []
+  for(let i = 0; i < extracts.length - 1; i++){
+    if( extracts[i].endIndex > extracts[i + 1].startIndex ) return
+
+    intermediateTexts.push(str.slice(extracts[i].endIndex, extracts[i + 1].startIndex))
+  }
+
+  let j = 0, mdText = '', table = ''
+  extracts.forEach(({ text }) => {
+    table = `<options-table html="${text}" />`
+
+    mdText = `${mdText}${table}`
+
+    if( intermediateTexts[j] ) mdText = `${mdText}${intermediateTexts[j]}`
+
+    j++
+  })
+
+  return `${forwardText}${mdText}${backText}`
+}
+
+export function convertTableToObject(html){
+  if( !html ) return
+
+  const headers = multiExtractWithWord(html, '<th>', '</th>').map(({ text }) => {
+    return {
+      text,
+      value: text.toLowerCase()
+    }
+  })
+
+  
+  const trLines = multiExtractWithWord(html, '<tr>', '</tr>')
+
+  const items = []
+
+  trLines.forEach(({ text }) => {
+    var tds = multiExtractWithWord(text, '<td>', '</td>')
+
+    if( tds.length <= 0 ) return
+
+    var item = {}
+
+    tds.forEach(({ text }, index) => {
+      item[headers[index].value] = text
+    })
+
+    items.push(item)
+  })
+
+  return { headers, items }
 }

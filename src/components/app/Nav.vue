@@ -89,7 +89,8 @@ export default {
       introductions: 'mdi-flag',
       utilities: 'mdi-apps',
       styles: 'mdi-transition',
-      components: 'mdi-view-quilt'
+      components: 'mdi-view-quilt',
+      internals: 'mdi-google-circles-extended'
     },
     internalValue: false
   }),

@@ -1,41 +1,44 @@
 ### TextField
 
-The `su-text-field` component provides a user-editable text input form. Also, because we are using the `su-input` component internally, we can use the properties of the <r-link to="components/SuInput">SuInput</r-link> document.
+The `su-text-field` component provides a user-editable text input form.
 
-<su-divider class="mb-8" />
+<su-divider class = "mb-8" />
 
-#### How to Use
+#### How to use
 
-The label property is a good way to explain to the user the role of the input field.
+<sample />
 
-<example file='SuTextField/uses' />
-
-#### Sample
+#### Options
 
 ##### Props
 
-###### Clearable
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| append-inner-icon | string | undefined | Sets the icon that appears behind and inside the input field. |
+| clearable | boolean | false | Add a button to delete all input values. |
+| clear-icon | string |'mdi-close' | **Clearable** Sets the icon to be displayed when enabled. |
+| prepare-inner-icon | string | undefined | Sets the icon that appears inside the front of the input field. |
+| rounded | string |'normal' | Add **border-radius** to the component. |
 
-If **clearable** is specified, a button will be added to delete all input values.
+##### Extends
 
-<example file='SuTextField/props/clearable' />
+This component has been extended by the following components: This inherits the options used by the source component.
 
-###### Icon
+-[Input](/components/SuInput)
 
-You can use the **prepend-icon**, **append-icon**, **prepend-inner-icon**, and **append-inner-icon** properties to place icons outside and inside the input field.
+##### Mixins
 
-<example file='SuTextField/props/icon' />
+This component has the following common properties:
 
-###### Label
+-[Roundable](/internals/mixins#Roundable)
 
-You can add a label to the input field using the **label** property.
+#### Events
 
-<example file='SuTextField/props/label' />
+<example file ='SuTextField/events/icon' />
 
-##### Events
-
-###### Icon
-
-You can use `click:prepare-inner`, `click:append-inner`, `click:prepare-outer`, and `click:append-outer` to set the click event for each icon.
-
-<example file='SuTextField/events/icon' />
+| Name | Description |
+| ---- | ---- |
+| click: append | Adds an event to the icon set by `append-icon`. |
+| click: append-inner | Adds an event to the icon set by `append-inner-icon`. |
+| click: prepare Adds an event to the icon set by `prepend-icon`. |
+| click: prepare-inner | Adds an event to the icon set by `prepend-inner-icon`. |

@@ -1,29 +1,25 @@
 ### Banner
 
-The `su-banner` component displays important and concise messages and provides actions for the user to take action on.
+The `su-banner` component displays an important, concise message and allows the user to take action.
 
 <su-divider class="mb-8" />
 
-#### How to Use
+#### Usage
 
-A banner displays a prominent message and related optional actions.
+The banner displays a prominent message and related optional actions.
 
-<example file='SuBanner/uses' />
+<sample />
 
-#### Sample
+#### Options
 
 ##### Props
 
-###### SingleLine
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|single-line|boolean|false|Omit messages longer than one line. |
 
-Specifying the **singleLine** property omits messages that are longer than one line.
+##### Extends
 
-<example file='SuBanner/props/singleLine' />
+This component is extended by the following components. This inherits the options used in the source component.
 
-##### Slots
-
-###### ActionClose
-
-You can use the **close** slot property of the **action** slot to close the banner at any time.
-
-<example file='SuBanner/slots/actionClose' />
+- [Sheet](/components/SuSheet)

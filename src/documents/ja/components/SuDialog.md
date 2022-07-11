@@ -8,14 +8,22 @@
 
 これは、**activator**と**default**スロットで構成されています。トリガー要素を**activator**スロットに配置します。
 
-<example file='SuDialog/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Fullscreen
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|fullscreen|boolean|false|ポップアップウィンドウが拡大され、ブラウザの表示領域全体に表示されます。|
+|max-width|number|undefined|ダイアログの最大の横幅を設定します。|
+|value|boolean|false|ダイアログの表示・非表示を切り替えます。|
+|width|number|undefined|ダイアログの横幅を設定します。|
 
-**fullscreen**プロパティを指定すると、ポップアップウィンドウが拡大され、ブラウザの表示領域全体に表示されます。
+##### Mixins
 
-<example file='SuDialog/props/fullscreen' />
+このコンポーネントには、以下の共通プロパティがあります。
+
+- [Overlayable](/internals/mixins#Overlayable)
+- [Transitionable](/internals/mixins#Transitionable)

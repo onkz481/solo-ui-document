@@ -31,8 +31,11 @@ import example from '../components/vueExampleViewer'
 // - tools
 import rLink from '../components/tools/rLink'
 import docInfo from '../components/tools/docInfo.vue'
+import { CodeViewer, optionsTable } from '../components/tools'
 // - error
 import doc404 from './errors/404.vue'
+
+import { examples } from '@onkz481/solo-ui'
 
 // markdowns
 import { genMarkdownBody } from '../util/markdown'
@@ -52,7 +55,8 @@ function onRouteChange( params ){
     component = doc404
   } else {
     component = genMarkdownBody(doc, {
-      example, rLink
+      CodeViewer, example, rLink, optionsTable,
+      sample: examples[document]
     })
   }
 

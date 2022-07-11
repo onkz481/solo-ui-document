@@ -8,14 +8,13 @@
 
 プロパティまたはデフォルトのスロットが指定されていない場合、コンポーネントはアプリケーションに半透明のレイヤーを表示します。
 
-<example file='SuOverlay/uses' />
+<sample />
 
-#### サンプル
+#### Options
 
-##### プロパティ
+##### Props
 
-###### Absolute
-
-**absolute**プロパティを指定すると、レイヤーは親要素内に表示されます。
-
-<example file='SuOverlay/props/absolute' />
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|absolute|boolean|false|オーバーレイを親要素内に表示します。|
+|value|boolean|true|オーバーレイの表示・非表示を切り替えます。|

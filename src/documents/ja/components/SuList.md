@@ -6,40 +6,18 @@
 
 #### 使い方
 
-全てのアイテムは`su-list-item`、`su-list-item-content`コンポーネントでラッピングされる必要があります。
+<sample />
 
-<example file='SuList/uses1' />
+#### Options
 
-`su-list-item-icon`コンポーネントは、アイテムに[アイコン](https://materialdesignicons.com/)を追加します。
+##### Props
 
-<example file='SuList/uses2' />
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+|shrink|boolean|false|`su-list-item`の幅を縮小します。|
 
-#### サンプル
+##### Extends
 
-##### プロパティ
+このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-###### Link
-
-アイテムがリンクであることを指定します。これは、**to prop**を指定すると自動的に適用されます。
-
-<example file='SuList/props/link' />
-
-###### Shrink
-
-**shrink**を指定すると、`su-list-item`の幅を縮小します。
-
-<example file='SuList/props/shrink' />
-
-#### その他
-
-##### Multiline
-
-`su-list-item`コンポーネントは、**two-line**および**three-line**プロパティを指定することにより、最大3行のレイアウトをサポートします。
-
-<example file='SuList/others/multiline' />
-
-##### Subgroup
-
-`su-list-group`コンポーネントを使用すると、クリックしたときに表示されるアイテムグループを含めることができます。 親アイテムは、**activator**スロットで指定されます。
-
-<example file='SuList/others/subgroup' />
+- [Sheet](/components/SuSheet)
