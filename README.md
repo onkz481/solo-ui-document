@@ -10,7 +10,7 @@ This project provides documentation that explains how to use the UI library "[So
 
 The document can be accessed from the following URL.
 
-[https://onkz481.github.io/solo-ui-document](https://onkz481.github.io/solo-ui-document)
+[https://solo-ui-document.netlify.app](https://solo-ui-document.netlify.app)
 
 ## Project setup
 ```
