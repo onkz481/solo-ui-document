@@ -6,7 +6,7 @@
   "author": "Kazuya Ono <prvogo@gmail.com>",
   "scripts": {
     "serve": "run-s modified serve:dev",
-    "build": "run-s modified build:prod",
+    "build": "run-s build:prod",
     "lint": "vue-cli-service lint",
     "build:dev": "vue-cli-service build --mode development",
     "build:prod": "vue-cli-service build --mode production",
