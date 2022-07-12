@@ -51,7 +51,7 @@ The **actions** slot can be used to display a button and prompt the user for som
 
 This component is extended by the following components. This inherits the options used in the source component.
 
-- [Sheet](/components/SuSheet)
+- [Sheet](../components/SuSheet)
 
 #### Slots
 

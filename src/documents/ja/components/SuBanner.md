@@ -51,7 +51,7 @@
 
 このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-- [Sheet](/components/SuSheet)
+- [Sheet](../components/SuSheet)
 
 #### Slots
 
