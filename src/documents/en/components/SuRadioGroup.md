@@ -4,13 +4,42 @@ The `su-radio-group` component is used in combination with the` su-radio` compon
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
 You can use the `su-radio-group` **v-model** to access the selected radio buttons in the group.
 
-<sample />
+```html
+<template>
+  <div
+    class="flex-box"
+  >
+    <su-radio-group
+      v-model="radios"
+    >
+      <su-radio
+        v-for="n in 3"
+        :key="n"
+        :label="`Radio ${n}`"
+        :value="`Radio ${n}`"
+      />
+    </su-radio-group>
+  </div>
+</template>
+```
+
+```js
+<script>
+export default {
+  data: () => ({
+    radios: 'Radio 1'
+  })
+}
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -23,5 +52,5 @@ You can use the `su-radio-group` **v-model** to access the selected radio button
 
 This component has been extended by the following components: This inherits the options used by the source component.
 
-- [Input](/components/SuInput)
-- [ItemGroup](/components/SuItemGroup)
+- [Input](../components/SuInput)
+- [ItemGroup](../components/SuItemGroup)

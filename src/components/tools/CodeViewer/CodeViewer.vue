@@ -94,14 +94,16 @@ export default {
       flex: 1 1 auto;
       min-height: 24px;
       overflow: auto;
+
+      code {
+        border-radius: 0;
+        padding: 0;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: inherit !important;
+      }
     }
-    code {
-      border-radius: 0;
-      padding: 0;
-      font-family: inherit;
-      font-size: inherit;
-      background-color: inherit !important;
-    }
+    
     pre, code {
       font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
       font-size: 1em;

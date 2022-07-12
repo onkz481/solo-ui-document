@@ -4,11 +4,26 @@ It has the role of **Row** in the grid layout using **flex-box**.
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+`su-row` is placed as the parent element of `su-col` and allows you to control the horizontal position of the child elements.
+
+```html
+<template>
+  <su-row
+    align="center"
+    justify="center"
+  >
+    <su-col
+      cols="6"
+    />
+  </su-row>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -22,4 +37,4 @@ It has the role of **Row** in the grid layout using **flex-box**.
 
 This component has the following common properties:
 
-- [Tagable](/internals/mixins#Tagable)
+- [Tagable](../internals/mixins#Tagable)

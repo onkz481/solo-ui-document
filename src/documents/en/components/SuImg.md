@@ -4,11 +4,21 @@ You can use the `su-img` component to display responsive images.
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+Displays the image specified by **src** responsively.
+
+```html
+<template>
+  <su-img
+    src="https://cdn.pixabay.com/photo/2022/06/22/16/00/cap-7278216_960_720.jpg"
+  />
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -24,4 +34,4 @@ You can use the `su-img` component to display responsive images.
 
 This component has the following common properties:
 
-- [Dimensionable](/internals/mixins#Dimensionable)
+- [Dimensionable](../internals/mixins#Dimensionable)

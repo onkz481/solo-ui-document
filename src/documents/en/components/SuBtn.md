@@ -8,9 +8,17 @@ The `su-btn` component replaces a standard HTML button with a customized button.
 
 The simplest button contains uppercase text and a hover effect.
 
-<sample />
+```html
+<template>
+  <su-btn>
+    Button
+  </su-btn>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -30,8 +38,8 @@ The simplest button contains uppercase text and a hover effect.
 
 This component has the following common properties
 
-- [Colorable](/internals/mixins#Colorable)
-- [Dimensionable](/internals/mixins#Dimensionable)
-- [Elevatable](/internals/mixins#Elevatable)
-- [Roundable](/internals/mixins#Roundable)
-- [Themeable](/internals/mixins#Themeable)
+- [Colorable](../internals/mixins#Colorable)
+- [Dimensionable](../internals/mixins#Dimensionable)
+- [Elevatable](../internals/mixins#Elevatable)
+- [Roundable](../internals/mixins#Roundable)
+- [Themeable](../internals/mixins#Themeable)

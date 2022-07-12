@@ -4,11 +4,27 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+通常、`su-col` は `su-row` の子要素として配置します。
+
+```html
+<template>
+  <su-row>
+    <su-col
+      cols="6"
+    />
+
+    <su-col
+      cols="6"
+    />
+  </su-row>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -21,4 +37,4 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Tagable](/internals/mixins#Tagable)
+- [Tagable](../internals/mixins#Tagable)

@@ -4,11 +4,28 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+`su-row` の親要素として配置することで、レスポンシブを実現します。
+
+```html
+<template>
+  <su-container>
+    <su-row>
+      <su-col
+        v-for="n in 3"
+        :key="n"
+      >
+        ...
+      </su-col>
+    </su-row>
+  </su-container>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -20,4 +37,4 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Tagable](/internals/mixins#Tagable)
+- [Tagable](../internals/mixins#Tagable)

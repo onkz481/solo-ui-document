@@ -4,13 +4,21 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
 最も単純なボタンには、大文字のテキストとホバー効果が含まれます。
 
-<sample />
+```html
+<template>
+  <su-btn>
+    Button
+  </su-btn>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -30,8 +38,8 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Colorable](/internals/mixins#Colorable)
-- [Dimensionable](/internals/mixins#Dimensionable)
-- [Elevatable](/internals/mixins#Elevatable)
-- [Roundable](/internals/mixins#Roundable)
-- [Themeable](/internals/mixins#Themeable)
+- [Colorable](../internals/mixins#Colorable)
+- [Dimensionable](../internals/mixins#Dimensionable)
+- [Elevatable](../internals/mixins#Elevatable)
+- [Roundable](../internals/mixins#Roundable)
+- [Themeable](../internals/mixins#Themeable)

@@ -4,11 +4,15 @@ The `su-radio` component provides the function as a simple radio button.
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+Normally, `su-radio` is used in combination with `su-radio-group`.
+
+- [SuRadioGroup](./SuRadioGroup)
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -24,4 +28,4 @@ The `su-radio` component provides the function as a simple radio button.
 
 This component has the following common properties:
 
-- [Colorable](/internals/mixins#Colorable)
+- [Colorable](../internals/mixins#Colorable)

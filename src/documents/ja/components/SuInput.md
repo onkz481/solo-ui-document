@@ -4,13 +4,26 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
 `su-input`には、**prepend**、**append**、メッセージ、およびデフォルトのスロットがあります。
 
-<sample />
+```html
+<template>
+  <su-input
+    prepend-icon="mdi-home"
+    append-icon="mdi-home"
+    hint="hint"
+    :messages="['messages']"
+  >
+    Default Slot
+  </su-input>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -28,6 +41,6 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Colorable](/internals/mixins#Colorable)
-- [Themeable](/internals/mixins#Themeable)
-- [Validatable](/internals/mixins#Validatable)
+- [Colorable](../internals/mixins#Colorable)
+- [Themeable](../internals/mixins#Themeable)
+- [Validatable](../internals/mixins#Validatable)

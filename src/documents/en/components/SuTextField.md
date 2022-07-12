@@ -4,11 +4,29 @@ The `su-text-field` component provides a user-editable text input form.
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+The entered text can be retrieved using **v-model**.
+
+```html
+<template>
+  <su-text-field
+    v-model="text"
+  />
+</template>
+```
+
+```js
+export default {
+  data: () => ({
+    text: ''
+  })
+}
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 

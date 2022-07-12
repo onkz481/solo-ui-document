@@ -4,11 +4,38 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+`su-tabs` コンポーネントは、`su-tab` コンポーネントをラップして使用します。
+
+```html
+<template>
+  <su-tabs
+    v-model="tab"
+  >
+    <su-tab
+      v-for="n in 10"
+      :key="n"
+    >
+      <span v-text="`Item ${n}`" />
+    </su-tab>
+  </su-tabs>
+</template>
+```
+
+```js
+<script>
+export default {
+  data: () => ({
+    tab: 0
+  })
+}
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -25,5 +52,5 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Colorable](/internals/mixins#Colorable)
-- [Roundable](/internals/mixins#Roundable)
+- [Colorable](../internals/mixins#Colorable)
+- [Roundable](../internals/mixins#Roundable)

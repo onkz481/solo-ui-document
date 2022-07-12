@@ -4,11 +4,75 @@ The `su-progress` component can be used to create the ability to inform the user
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+The default slot is passed "value" and "color" as slot properties.
+
+```html
+<template>
+  <su-progress
+    v-model="progress"
+  >
+    <template #default="{ value, color }">
+      <div
+        class="d-flex align-center justify-center"
+        style="height: 100px;"
+      >
+        <div
+          :class="`${color}`"
+          :style="{
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            width: '100%',
+            height: `${value}px`,
+            backgroundColor: `${color}`,
+            transition: '0.3s cubic-bezier(0.25, 0.8, 0.5, 1)'
+          }"
+        />
+
+        <su-btn
+          v-if="value !== 'indeterminate'"
+          @click="changeInterval"
+        >
+          <span v-text="`${value}%`" />
+        </su-btn>
+      </div>
+    </template>
+  </su-progress>
+</template>
+```
+
+```js
+<script>
+  export default {
+    data: () => ({
+      progress: 0
+    }),
+    methods: {
+      changeInterval(){
+        if( this.interval ){
+          window.clearInterval(this.interval)
+
+          this.interval = null
+
+          return
+        }
+
+        this.interval = window.setInterval(() => {
+          let value = this.progress + 1
+
+          this.progress = value > 100 ? 0 : value
+        }, 100)
+      }
+    }
+  }
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 

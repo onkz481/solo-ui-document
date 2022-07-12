@@ -4,11 +4,38 @@ The `su-tabs` component can be used as a navigation to switch the contents of th
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+The `su-tabs` component is used by wrapping the `su-tab` component.
+
+```html
+<template>
+  <su-tabs
+    v-model="tab"
+  >
+    <su-tab
+      v-for="n in 10"
+      :key="n"
+    >
+      <span v-text="`Item ${n}`" />
+    </su-tab>
+  </su-tabs>
+</template>
+```
+
+```js
+<script>
+export default {
+  data: () => ({
+    tab: 0
+  })
+}
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -25,5 +52,5 @@ The `su-tabs` component can be used as a navigation to switch the contents of th
 
 This component has the following common properties:
 
-- [Colorable](/internals/mixins#Colorable)
-- [Roundable](/internals/mixins#Roundable)
+- [Colorable](../internals/mixins#Colorable)
+- [Roundable](../internals/mixins#Roundable)

@@ -4,11 +4,29 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+入力したテキストは、**v-model** を使用して取得できます。
+
+```html
+<template>
+  <su-textarea
+    v-model="text"
+  />
+</template>
+```
+
+```js
+export default {
+  data: () => ({
+    text: ''
+  })
+}
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -22,4 +40,4 @@
 
 このコンポーネントは、以下コンポーネントによって拡張されています。これにより、拡張元コンポーネントで使用されているオプションが継承されます。
 
-- [TextField](/components/SuTextField)
+- [TextField](../components/SuTextField)

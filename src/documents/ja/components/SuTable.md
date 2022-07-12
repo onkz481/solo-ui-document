@@ -4,11 +4,50 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+**headers**、**items** プロパティに指定された値を元に、「table」要素を生成します。
+
+```html
+<template>
+  <su-table
+    :headers="headers"
+    :items="items"
+  />
+</template>
+```
+
+```js
+<script>
+export default {
+  data: () => ({
+    headers: [
+      {
+        text: 'header name',
+        value: 'name'
+      },
+      {
+        text: 'header value',
+        value: 'value'
+      }
+    ],
+    items: [
+      {
+        name: 'item name 1 <code>code</code>',
+        value: 'item value 1'
+      },
+      {
+        name: 'item name 2',
+        value: 'item value 2'
+      }
+    ]
+}
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 

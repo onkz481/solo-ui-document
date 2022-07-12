@@ -4,13 +4,19 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
 単純な`su-divider`コンポーネントは、要素内に水平線を表示します。
 
-<sample />
+```html
+<template>
+  <su-divider />
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -22,4 +28,4 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Themeable](/internals/mixins#Themeable)
+- [Themeable](../internals/mixins#Themeable)

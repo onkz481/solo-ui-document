@@ -4,11 +4,15 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+通常、`su-radio` は `su-radio-group` と組み合わせて使用します。
+
+- [SuRadioGroup](./SuRadioGroup)
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -24,4 +28,4 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Colorable](/internals/mixins#Colorable)
+- [Colorable](../internals/mixins#Colorable)

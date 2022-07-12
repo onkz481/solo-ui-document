@@ -4,11 +4,50 @@ The `su-table` component is used to display data in tabular format.
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+Generates a "table" element based on the values specified in the **headers** and **items** properties.
+
+```html
+<template>
+  <su-table
+    :headers="headers"
+    :items="items"
+  />
+</template>
+```
+
+```js
+<script>
+export default {
+  data: () => ({
+    headers: [
+      {
+        text: 'header name',
+        value: 'name'
+      },
+      {
+        text: 'header value',
+        value: 'value'
+      }
+    ],
+    items: [
+      {
+        name: 'item name 1 <code>code</code>',
+        value: 'item value 1'
+      },
+      {
+        name: 'item name 2',
+        value: 'item value 2'
+      }
+    ]
+}
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 

@@ -4,13 +4,19 @@ The `su-icon` component provides the ability to add a single icon to a page. See
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
 The default slot of the `su-icon` component describes the icon name.
 
-<sample />
+```html
+<su-icon>
+  mdi-home
+</su-icon>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -25,5 +31,5 @@ The default slot of the `su-icon` component describes the icon name.
 
 This component has the following common properties:
 
-- [Colorable](/internals/mixins#Colorable)
-- [Themeable](/internals/mixins#Themeable)
+- [Colorable](../internals/mixins#Colorable)
+- [Themeable](../internals/mixins#Themeable)

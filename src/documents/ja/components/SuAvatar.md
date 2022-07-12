@@ -4,13 +4,35 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
 `su-avatar`コンポーネントは、デフォルトのスロットに`img`、`su-icon`、またはテキストを使用できます。
 
-<sample />
+```html
+<template>
+  <su-avatar
+    color="secondary"
+  >
+    <img src="https://joeschmoe.io/api/v1/random">
+  </su-avatar>
+
+  <su-avatar
+    color="primary"
+  >
+    <su-icon>mdi-home</su-icon>
+  </su-avatar>
+
+  <su-avatar
+    color="primary"
+  >
+    <span class="text-h6">TE</span>
+  </su-avatar>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -22,5 +44,5 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Colorable](/internals/mixins#Colorable)
-- [Roundable](/internals/mixins#Roundable)
+- [Colorable](../internals/mixins#Colorable)
+- [Roundable](../internals/mixins#Roundable)

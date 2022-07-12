@@ -4,11 +4,59 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+**indeterminate** プロパティが`true`の場合、スロットプロパティの"value"は常に'indeterminate'を返します。
+
+```html
+<template>
+  <su-progress-line
+    v-model="progress"
+    height="30"
+  >
+    <template #default="{ value }">
+      <div 
+        class="d-flex align-center justify-center"
+        style="height: 100%;"
+      >
+        <span v-text="value !== 'indeterminate' ? `${value}%` : '∞'" />
+      </div>
+    </template>
+  </su-progress-line>
+</template>
+```
+
+```js
+<script>
+  export default {
+    data: () => ({
+      interval: null,
+      progress: 0
+    }),
+    methods: {
+      changeInterval(){
+        if( this.interval ){
+          window.clearInterval(this.interval)
+
+          this.interval = null
+
+          return
+        }
+
+        this.interval = window.setInterval(() => {
+          let value = this.progress + 1
+
+          this.progress = value > 100 ? 0 : value
+        }, 100)
+      }
+    }
+  }
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 

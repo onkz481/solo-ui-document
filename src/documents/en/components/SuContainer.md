@@ -4,11 +4,28 @@ It has the role of **Container** in the grid layout using **flex-box**.
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+Responsive by placing it as the parent element of `su-row`.
+
+```html
+<template>
+  <su-container>
+    <su-row>
+      <su-col
+        v-for="n in 3"
+        :key="n"
+      >
+        ...
+      </su-col>
+    </su-row>
+  </su-container>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -20,4 +37,4 @@ It has the role of **Container** in the grid layout using **flex-box**.
 
 This component has the following common properties:
 
-- [Tagable](/internals/mixins#Tagable)
+- [Tagable](../internals/mixins#Tagable)

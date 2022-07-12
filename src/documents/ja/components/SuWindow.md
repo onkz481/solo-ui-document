@@ -4,11 +4,83 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
-<sample />
+**v-model** を使用して、表示されたウィンドウの順序を取得できます。<br />
+また、「next」および「prev」スロットを使用して、ペジネーションアイコンをカスタマイズできます。
+
+```html
+<template>
+  <su-window
+    v-model="window"
+  >
+    <su-window-item>
+      <su-sheet
+        height="200"
+        color="primary"
+        class="d-flex align-center justify-center"
+      >
+        window 1
+      </su-sheet>
+    </su-window-item>
+
+    <su-window-item>
+      <su-sheet
+        height="200"
+        color="secondary"
+        class="d-flex align-center justify-center"
+      >
+        window 2
+      </su-sheet>
+    </su-window-item>
+
+    <su-window-item>
+      <su-sheet
+        height="200"
+        color="primary"
+        class="d-flex align-center justify-center"
+      >
+        window 3
+      </su-sheet>
+    </su-window-item>
+
+    <template 
+      #prev="{ on, attrs }"
+    >
+      <su-btn
+        v-bind="attrs"
+        v-on="on"
+      >
+        Prev
+      </su-btn>
+    </template>
+
+    <template 
+      #next="{ on, attrs }"
+    >
+      <su-btn
+        v-bind="attrs"
+        v-on="on"
+      >
+        Next
+      </su-btn>
+    </template>
+  </su-window>
+</template>
+```
+
+```js
+export default {
+  data: () => ({
+    window: 0
+  })
+}
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 

@@ -4,11 +4,27 @@ It has the role of **Col** in the grid layout using **flex-box**. Must be a chil
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
-<sample />
+Normally, `su-col` is placed as a child element of `su-row`.
+
+```html
+<template>
+  <su-row>
+    <su-col
+      cols="6"
+    />
+
+    <su-col
+      cols="6"
+    />
+  </su-row>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -21,4 +37,4 @@ It has the role of **Col** in the grid layout using **flex-box**. Must be a chil
 
 This component has the following common properties:
 
-- [Tagable](/internals/mixins#Tagable)
+- [Tagable](../internals/mixins#Tagable)

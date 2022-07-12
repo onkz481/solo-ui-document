@@ -4,13 +4,64 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
 これは、**activator**と**default**スロットで構成されています。トリガー要素を**activator**スロットに配置します。
 
-<sample />
+```html
+<template>
+  <su-dialog
+    v-model="dialog"
+    :max-width="400"
+  >
+    <template #activator="{ on }">
+      <su-btn
+        v-on="on"
+      >
+        show dialog
+      </su-btn>
+    </template>
+
+    <su-card>
+      <su-card-title>
+        Dialog
+      </su-card-title>
+
+      <su-divider />
+
+      <su-card-content>
+        Dialog Content
+      </su-card-content>
+
+      <su-divider />
+
+      <su-card-actions>
+        <su-spacer />
+
+        <su-btn
+          @click="dialog = !dialog"
+        >
+          close
+        </su-btn>
+      </su-card-actions>
+    </su-card>
+  </su-dialog>
+</template>
+```
+
+```js
+<script>
+  export default {
+    data: () => ({
+      dialog: false
+    })
+  }
+</script>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -25,5 +76,5 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Overlayable](/internals/mixins#Overlayable)
-- [Transitionable](/internals/mixins#Transitionable)
+- [Overlayable](../internals/mixins#Overlayable)
+- [Transitionable](../internals/mixins#Transitionable)

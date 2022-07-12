@@ -4,13 +4,19 @@ The `su-divider` component is used to visually divide the layout.
 
 <su-divider class = "mb-8" />
 
-#### How to use
+#### Usage
 
 A simple `su-divider` component displays a horizontal line within an element.
 
-<sample />
+```html
+<template>
+  <su-divider />
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -22,4 +28,4 @@ A simple `su-divider` component displays a horizontal line within an element.
 
 This component has the following common properties:
 
-- [Themeable](/internals/mixins#Themeable)
+- [Themeable](../internals/mixins#Themeable)

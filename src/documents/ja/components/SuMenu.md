@@ -4,13 +4,51 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
 これは、**activator**と**default**スロットで構成されています。トリガー要素を**activator**スロットに配置します。
 
-<sample />
+```html
+<template>
+  <su-menu>
+    <template v-slot:activator="{ on }">
+      <su-btn
+        v-on="on"
+      >
+        menu
+      </su-btn>
+    </template>
+
+    <su-card>
+      <su-list>
+        <su-list-item
+          link
+        >
+          <su-list-item-content>
+            <su-list-item-title>
+              List 1
+            </su-list-item-title>
+          </su-list-item-content>
+        </su-list-item>
+
+        <su-list-item
+          link
+        >
+          <su-list-item-content>
+            <su-list-item-title>
+              List 1
+            </su-list-item-title>
+          </su-list-item-content>
+        </su-list-item>
+      </su-list>
+    </su-card>
+  </su-menu>
+</template>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -28,5 +66,5 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Elevatable](/internals/mixins#Elevatable)
-- [Transitionable](/internals/mixins#Transitionable)
+- [Elevatable](../internals/mixins#Elevatable)
+- [Transitionable](../internals/mixins#Transitionable)

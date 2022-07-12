@@ -4,13 +4,19 @@
 
 <su-divider class="mb-8" />
 
-#### 使い方
+#### Usage
 
 `su-icon`コンポーネントのデフォルトスロットは、アイコン名を記述します。
 
-<sample />
+```html
+<su-icon>
+  mdi-home
+</su-icon>
+```
 
 #### Options
+
+<sample class="mb-4" />
 
 ##### Props
 
@@ -25,5 +31,5 @@
 
 このコンポーネントには、以下の共通プロパティがあります。
 
-- [Colorable](/internals/mixins#Colorable)
-- [Themeable](/internals/mixins#Themeable)
+- [Colorable](../internals/mixins#Colorable)
+- [Themeable](../internals/mixins#Themeable)
